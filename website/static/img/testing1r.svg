@@ -1,0 +1,130 @@
+<svg
+  width="1041"
+  height="1041"
+  viewBox="0 0 64 64"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Title and description (for accessibility) -->
+  <title>Ready to Use Tests (Red Theme)</title>
+  <desc>
+    A stylized glass pane containing a folder icon with multiple pages 
+    and a "15+" badge, indicating over 15 ready-to-use tests, 
+    now in red branding (#cc0000).
+  </desc>
+
+  <!-- ========== DEFINITIONS: GRADIENTS & FILTERS ========== -->
+  <defs>
+    <!-- Glassy gradient for the large pane (now tinted red instead of blue) -->
+    <linearGradient id="paneGradient" x1="0" y1="0" x2="1" y2="1">
+      <!-- A soft red tint at the start -->
+      <stop offset="0%" stop-color="#f6bebe" stop-opacity="0.25" />
+      <!-- Fade toward white -->
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Subtle drop shadow for the pane -->
+    <filter id="glassShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow 
+        dx="0" 
+        dy="4" 
+        stdDeviation="4" 
+        flood-color="#000000" 
+        flood-opacity="0.15" 
+      />
+    </filter>
+
+    <!-- Gradient for folder/badge icons (red theme) -->
+    <linearGradient id="iconGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cc0000" />
+      <stop offset="100%" stop-color="#990000" />
+    </linearGradient>
+  </defs>
+
+  <!-- ========== GLASSY BACKGROUND PANE ========== -->
+  <rect
+    x="8"
+    y="8"
+    width="48"
+    height="48"
+    rx="6"
+    fill="url(#paneGradient)"
+    filter="url(#glassShadow)"
+    stroke="#cc0000"
+    stroke-width="1.5"
+  />
+
+  <!-- Subtle highlight on the glass (curved line near the top) -->
+  <path
+    d="M12 10 Q 18 12, 26 10 Q 38 8, 52 12"
+    stroke="#FFFFFF"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.2"
+  />
+
+  <!-- ========== FOLDER WITH STACKED "TEST" PAGES AND "15+" BADGE ========== -->
+  <g transform="translate(16, 20) scale(1.2)">
+    <!-- Folder shape (filled with red gradient) -->
+    <path
+      d="
+        M0 6
+        L2 4
+        H8
+        L10 6
+        H16
+        V14
+        H0
+        Z
+      "
+      fill="url(#iconGradient)"
+    />
+
+    <!-- Multiple "test" pages stacked inside the folder -->
+    <rect 
+      x="3" 
+      y="6.5" 
+      width="10" 
+      height="6" 
+      fill="#FFFFFF" 
+      opacity="0.2" 
+      rx="1" 
+      transform="rotate(-2, 8, 9.5)"
+    />
+    <rect 
+      x="4" 
+      y="7.5" 
+      width="10" 
+      height="6" 
+      fill="#FFFFFF" 
+      opacity="0.3" 
+      rx="1" 
+      transform="rotate(-1, 9, 10.5)"
+    />
+    <rect 
+      x="5" 
+      y="8.5" 
+      width="10" 
+      height="6" 
+      fill="#FFFFFF" 
+      opacity="0.4" 
+      rx="1"
+    />
+
+    <!-- Badge circle for '15+' (top-right corner of folder) -->
+    <circle cx="16" cy="2" r="5.5" fill="url(#iconGradient)" />
+
+    <!-- '15+' text inside the badge -->
+    <text
+      x="16"
+      y="2"
+      fill="#FFFFFF"
+      font-size="5"
+      font-weight="bold"
+      text-anchor="middle"
+      alignment-baseline="middle"
+    >
+      15+
+    </text>
+  </g>
+</svg>

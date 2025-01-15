@@ -1,0 +1,32 @@
+{
+  "validTitles": [
+    "CEO",
+    "Project Manager",
+    "Assistant Project Manager",
+    "IT Engineer",
+    "Controller",
+    "IT Manager"
+  ],
+  "validLocations": [
+    {
+      "state": "NY",
+      "zipCode": "12345",
+      "streetAddress": "123 Yes Street"
+    },
+    {
+      "state": "CT",
+      "zipCode": "54321",
+      "streetAddress": "32 Yard Avenue"
+    },
+    {
+      "state": "MA",
+      "zipCode": "32543",
+      "streetAddress": "88 Jefferson Road"
+    },
+    {
+      "state": "CA",
+      "zipCode": "85431",
+      "streetAddress": "62 Top Street"
+    }
+  ]
+}

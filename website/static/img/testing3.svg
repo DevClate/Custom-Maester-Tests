@@ -1,0 +1,147 @@
+<svg 
+  width="1041" 
+  height="1041" 
+  viewBox="0 0 64 64" 
+  fill="none" 
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Title and description (for accessibility) -->
+  <title>Single Pane of Glass: Multiple Tests</title>
+  <desc>
+    A stylized icon showing three test items within a transparent, glass-like pane.
+  </desc>
+
+  <!-- Define gradients and filters -->
+  <defs>
+    <!-- Glassy gradient for the pane -->
+    <linearGradient id="paneGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9EC9F7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Subtle drop shadow for the pane -->
+    <filter id="glassShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow 
+        dx="0" 
+        dy="4" 
+        stdDeviation="4" 
+        flood-color="#000000" 
+        flood-opacity="0.15" 
+      />
+    </filter>
+
+    <!-- Gradient for the checkmark circles -->
+    <radialGradient id="circleGradient" cx="0.5" cy="0.5" r="0.8">
+      <stop offset="0%" stop-color="#4A90E2" />
+      <stop offset="100%" stop-color="#337ACC" />
+    </radialGradient>
+  </defs>
+
+  <!-- The main "pane of glass" -->
+  <rect 
+    x="8" 
+    y="8" 
+    width="48" 
+    height="48" 
+    rx="6" 
+    fill="url(#paneGradient)" 
+    filter="url(#glassShadow)"
+    stroke="#4A90E2"
+    stroke-width="1.5"
+  />
+
+  <!-- A subtle highlight to emphasize the glass -->
+  <path 
+    d="M12 10 Q 18 12, 26 10 Q 38 8, 52 12" 
+    stroke="#FFFFFF" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    opacity="0.2"
+  />
+
+  <!-- Three "test" rows, each with a title bar and a check icon -->
+
+  <!-- Row 1 -->
+  <!-- Title bar -->
+  <rect 
+    x="20" 
+    y="18" 
+    width="30" 
+    height="5" 
+    rx="2.5" 
+    fill="#FFFFFF" 
+    opacity="0.45"
+  />
+  <!-- Circle -->
+  <circle 
+    cx="15" 
+    cy="20.5" 
+    r="4" 
+    fill="url(#circleGradient)" 
+  />
+  <!-- Check mark -->
+  <path 
+    d="M13.5 20.5 l1.5 1.5 l3 -3" 
+    fill="none" 
+    stroke="#FFFFFF" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
+
+  <!-- Row 2 -->
+  <!-- Title bar -->
+  <rect 
+    x="20" 
+    y="28" 
+    width="30" 
+    height="5" 
+    rx="2.5" 
+    fill="#FFFFFF" 
+    opacity="0.45"
+  />
+  <!-- Circle -->
+  <circle 
+    cx="15" 
+    cy="30.5" 
+    r="4" 
+    fill="url(#circleGradient)"
+  />
+  <!-- Check mark -->
+  <path 
+    d="M13.5 30.5 l1.5 1.5 l3 -3" 
+    fill="none" 
+    stroke="#FFFFFF" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
+
+  <!-- Row 3 -->
+  <!-- Title bar -->
+  <rect 
+    x="20" 
+    y="38" 
+    width="30" 
+    height="5" 
+    rx="2.5" 
+    fill="#FFFFFF" 
+    opacity="0.45"
+  />
+  <!-- Circle -->
+  <circle 
+    cx="15" 
+    cy="40.5" 
+    r="4" 
+    fill="url(#circleGradient)"
+  />
+  <!-- Check mark -->
+  <path 
+    d="M13.5 40.5 l1.5 1.5 l3 -3" 
+    fill="none" 
+    stroke="#FFFFFF" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
+</svg>
