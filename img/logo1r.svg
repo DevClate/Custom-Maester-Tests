@@ -1,0 +1,60 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="64"
+  height="64"
+  viewBox="0 0 64 64"
+>
+  <!-- Title/desc for accessibility -->
+  <title>Fiery Flame Repository Icon (Bigger Flame)</title>
+  <desc>
+    A larger, more fiery-looking flame with a folder inside indicating a repository of tests.
+  </desc>
+
+  <defs>
+    <!-- Gradient for the flame -->
+    <linearGradient id="flameGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF5722" />
+      <stop offset="100%" stop-color="#FF8A50" />
+    </linearGradient>
+
+    <!-- Gradient for the folder -->
+    <linearGradient id="folderGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fafafa" />
+      <stop offset="100%" stop-color="#e0e0e0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Larger flame via transform around (32, 32) -->
+  <path
+    fill="url(#flameGradient)"
+    transform="
+      translate(32, 32)
+      scale(1.3)
+      translate(-32, -32)
+    "
+    d="M32 60
+       C42 55 52 45 48 32
+       C44 20 35 16 38 8
+       C38 2 30 2 30 8
+       C24 18 20 20 22 32
+       C24 40 20 45 20 50
+       C20 55 25 58 32 60
+       Z"
+  />
+
+  <!-- Folder & test lines inside the flame -->
+  <g transform="translate(21,34) scale(0.8)">
+    <!-- Folder shape -->
+    <path
+      fill="url(#folderGradient)"
+      stroke="#FFC7B0"
+      stroke-width="1"
+      stroke-linejoin="round"
+      d="M0 6 L2 2 H10 L12 6 H26 V18 H0 Z"
+    />
+    <!-- Subtle lines to show multiple "tests" or files -->
+    <rect x="4"  y="10" width="16" height="1.5" fill="#FF5722" opacity="0.6" />
+    <rect x="4"  y="13" width="12" height="1.5" fill="#FF5722" opacity="0.5" />
+    <rect x="4"  y="16" width="8"  height="1.5" fill="#FF5722" opacity="0.4" />
+  </g>
+</svg>
