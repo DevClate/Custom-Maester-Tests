@@ -29,12 +29,9 @@ claytont:
   title: Systems Administrator
   url: https://clatent.com
   image_url: https://github.com/devclate.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-clayton-tyger-articles'
+  page: true
   socials:
-    x: clatent
     linkedin: claytontyger
     github: devclate
-    bluesky: devclate.bsky.social
-    newsletter: https://thisweekinreact2.com
+    bluesky: https://bsky.app/profile/devclate.bsky.social
+    x: clatent
