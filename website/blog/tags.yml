@@ -1,17 +1,17 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+welcome:
+  label: welcome
+  permalink: /welcome
+  description: welcome tag description
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+maester:
+  label: maester
+  permalink: /maester
+  description: All posts related to Maester
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+mtcustomtests:
+  label: mtcustomtests
+  permalink: /mtcustomtests
+  description: All posts related directly to custom Maester tests
 
 hola:
   label: Hola
