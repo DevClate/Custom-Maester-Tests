@@ -20,6 +20,7 @@ const config: Config = {
   organizationName: 'DevClate', // Usually your GitHub org/user name.
   projectName: 'Custom-Maester-Tests', // Usually your repo name.
 
+
   trailingSlash: true, // Set to true if you are using GitHub pages
 
   onBrokenLinks: 'warn',
