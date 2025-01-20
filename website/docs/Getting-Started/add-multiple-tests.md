@@ -17,4 +17,4 @@ Now when you run your custom tests folder this test should show
 
 ### Step 4: Customize to your company
 
-For all files, run the Find and Replace in VSCode for "Contoso" with your company name.
+For all files, run the Find and Replace in VSCode for "Contoso" with your company name. I have this as the last step to ensure the test works correctly in your enviroment before changing the name.
