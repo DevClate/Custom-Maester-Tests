@@ -21,15 +21,5 @@
             <category>maester</category>
             <category>mtcustomtests</category>
         </item>
-        <item>
-            <title><![CDATA[Test Blog Post]]></title>
-            <link>https://devclate.github.io/Custom-Maester-Tests/blog/test-blog-post/</link>
-            <guid>https://devclate.github.io/Custom-Maester-Tests/blog/test-blog-post/</guid>
-            <pubDate>Wed, 08 Jan 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lets test this out]]></description>
-            <content:encoded><![CDATA[<p>Lets test this out</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Hola</category>
-        </item>
     </channel>
 </rss>

@@ -24,18 +24,4 @@
         <category label="maester" term="maester"/>
         <category label="mtcustomtests" term="mtcustomtests"/>
     </entry>
-    <entry>
-        <title type="html"><![CDATA[Test Blog Post]]></title>
-        <id>https://devclate.github.io/Custom-Maester-Tests/blog/test-blog-post/</id>
-        <link href="https://devclate.github.io/Custom-Maester-Tests/blog/test-blog-post/"/>
-        <updated>2025-01-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lets test this out]]></summary>
-        <content type="html"><![CDATA[<p>Lets test this out</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Clayton Tyger</name>
-            <uri>https://clatent.com</uri>
-        </author>
-        <category label="Hola" term="Hola"/>
-    </entry>
 </feed>
