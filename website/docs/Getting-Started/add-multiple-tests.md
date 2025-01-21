@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ### Step 1: Download Tests from GitHub
 
-Download all tests needed from GitHub
+Download all tests needed from GitHub. There should be 3 files for each test( .ps1, .tests.ps1, .md )
 
 ### Step 2: Copy to your `Custom` folder
 
