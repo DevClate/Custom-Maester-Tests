@@ -4,6 +4,8 @@ A collection of customs tests that can be quickly dropped into [Maester](https:/
 
 This repository is still in it's beginning stages and I plan to add many more tests to this repository that just aren't 365 focused as well. I welcome any contributions, please make sure you create all 3 files per test so that it works smoothly for everyone - [Creating Tests](https://devclate.github.io/Custom-Maester-Tests/docs/Getting-Started/create-a-test/)
 
+There is also a webversion at [Custom Maester Tests](https://devclate.github.io/Custom-Maester-Tests/)
+
 ## Introduction
 
 ### What are custom Maester tests?
