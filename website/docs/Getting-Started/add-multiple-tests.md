@@ -7,13 +7,13 @@ sidebar_position: 2
 
 Download all tests needed from GitHub. There should be 3 files for each test( .ps1, .tests.ps1, .md )
 
-### Step 2: Copy to your `Custom` folder
+### Step 2: Copy to your Maester `Custom` folder
 
-Copy the test files into the `Custom` folder.
+Copy the test files into the `Custom` Maester folder.
 
 #### Step 3: Run the tests
 
-Now when you run your custom tests folder this test should show
+Now when you run your custom tests folder these tests should show
 
 ### Step 4: Customize to your company
 
