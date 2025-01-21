@@ -82,7 +82,7 @@ const config: Config = {
         { to: '/docs/category/tests', label: 'Tests', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/DevClate/Maester-Tests',
+          href: 'https://github.com/DevClate/Custom-Maester-Tests',
           label: 'GitHub',
           position: 'right',
         },
