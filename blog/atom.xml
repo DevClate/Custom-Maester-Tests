@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://devclate.github.io/Custom-Maester-Tests/blog/</id>
     <title>Custom Maester Test Collection Blog</title>
-    <updated>2025-01-20T00:00:00.000Z</updated>
+    <updated>2025-01-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://devclate.github.io/Custom-Maester-Tests/blog/"/>
     <subtitle>Custom Maester Test Collection Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://devclate.github.io/Custom-Maester-Tests/blog/welcome/</id>
         <link href="https://devclate.github.io/Custom-Maester-Tests/blog/welcome/"/>
-        <updated>2025-01-20T00:00:00.000Z</updated>
+        <updated>2025-01-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the Custom Maester Test Collections blog! I created this repository so that there would be an easy way to add new tests to your own environment and see how others create and use tests for theirs. These are not limited to Office 365 tests, I'm envisioning this repository will cover any and all tests that could be useful. It will be fun to see how others are using tests to check their environment. Maybe its if a certain file is accessed, or maybe its for documentation and the document must be in a certain form or use certain words, or maybe its to see if a server is following company standards?]]></summary>
         <content type="html"><![CDATA[<p>Welcome to the Custom Maester Test Collections blog! I created this repository so that there would be an easy way to add new tests to your own environment and see how others create and use tests for theirs. These are not limited to Office 365 tests, I'm envisioning this repository will cover any and all tests that could be useful. It will be fun to see how others are using tests to check their environment. Maybe its if a certain file is accessed, or maybe its for documentation and the document must be in a certain form or use certain words, or maybe its to see if a server is following company standards?</p>
 <p>I really hope others add their tests so that we all can benefit from them. And lets thank the <a href="https://maester.dev/" target="_blank" rel="noopener noreferrer">Maester</a> team for building out this phenomenal framework that we can use and make our environments safer and easier to monitor for free.</p>
