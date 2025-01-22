@@ -82,6 +82,11 @@ const config: Config = {
         { to: '/docs/category/tests', label: 'Tests', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
+          href: 'https://github.com/DevClate/Custom-Maester-Tests/tree/main/tests',
+          label: 'Repository',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/DevClate/Custom-Maester-Tests',
           label: 'GitHub',
           position: 'right',
