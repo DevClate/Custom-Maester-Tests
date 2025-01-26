@@ -1,17 +1,16 @@
+This test checks if there are any users missing or using an invalid business phone number in the format (123) 456-7890.
 
-This test checks if there are any users missing or using an invalid US postal code.
-
-Contoso's company policy requires that all users have a valid US postal code assigned. This is important for accurate records and correspondence.
+Contoso's company policy requires that all users have a valid business phone number assigned. This is important for accurate contact records and correspondence.
 
 **To remediate this issue:**
 
-- Identify the users missing or using an invalid postal code.
-- Raise a ticket in Service Now using [Form: Invalid or Missing Postal Code - HR Ticket](https://contoso.service-now.com/pcmissing) to request the correct postal code assignment for the users identified in this test.
-  - 🔺 If this is not actioned in three days, escalate to the HR manager.
+- Identify the users missing or using an invalid number format.
+- Raise a ticket in Service Now using [Form: Invalid or Missing Business Number](https://contoso.service-now.com/busnumbermissing) to request the correct number assignment for the users identified in this test.
+  - 🔺 If not actioned in three days, escalate to the HR manager.
 
 **Learn more:**
 
-- [Invalid or Missing Postal Code - HR Ticket](https://contoso.service-now.com/pcmissing)
+- [Invalid or Missing Business Number](https://contoso.service-now.com/busnumbermissing)
 - [HR Escalation Process](https://contoso.service-now.com/hrescalation)
 
 <!--- Results --->
