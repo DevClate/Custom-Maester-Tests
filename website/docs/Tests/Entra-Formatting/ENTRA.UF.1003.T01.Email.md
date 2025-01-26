@@ -1,8 +1,8 @@
 ---
-title: ENTRA.UF.1003.T01.Email - All Users should have the Capital-Initial Email Format
+title: ENTRA.UF.1003.T01.Email - All Users should have a Capital-Initial Email Format
 description: Enforce capital-first-initial email addresses for all Contoso users
 ---
-## All Users should have the Capital-Initial Email Format
+## All Users should have a Capital-Initial Email Format
 
 ### Description
 
