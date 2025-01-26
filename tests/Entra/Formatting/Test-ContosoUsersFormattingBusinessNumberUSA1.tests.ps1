@@ -5,7 +5,7 @@ BeforeAll {
     . "$PSScriptRoot\Test-ContosoUsersFormattingBusinessNumberUSA1.ps1"
 }
 
-Describe "Contoso" -Tag "ENTRA.UF.1002.USA", "Entra", "CustomTests", "USA", "Users", "BusinessNumber" {
+Describe "Contoso" -Tag "ENTRA.UF.1002.T01.USA", "Entra", "CustomTests", "USA", "Users", "BusinessNumber" {
 
     It "ENTRA.UF.1002.USA: Business Number - All users should have a valid format" {
         $result = Test-ContosoUsersFormattingBusinessNumberUSA1

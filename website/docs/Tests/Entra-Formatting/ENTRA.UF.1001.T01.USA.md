@@ -1,5 +1,5 @@
 ---
-title: ENTRA.UF.1001.USA - All users should have a valid US postal code
+title: ENTRA.UF.1001.T01.USA - All users should have a valid US postal code
 description: All users must have a valid US postal code
 ---
 ## All users should have a valid US Postal Code

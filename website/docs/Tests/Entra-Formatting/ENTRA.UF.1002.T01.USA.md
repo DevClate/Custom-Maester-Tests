@@ -1,12 +1,12 @@
 ---
-title: ENTRA.UF.1003.USA - All users should have a valid US business phone number - (123) 456-7890
-description: All users must have a valid business number in the format (XXX) XXX-XXXX
+title: ENTRA.UF.1002.T01.USA - All users should have a valid US business phone number - (123) 456-7890 x123
+description: All users must have a valid business number in the format (XXX) XXX-XXXX xXXX
 ---
 ## All users should have a valid business phone number
 
 ## Description
 
-All users should have the correct format for their business phone number, e.g., (123) 456-7890. This ensures consistent contact details across the organization.
+All users should have the correct format for their business phone number, e.g., (123) 456-7890 x123. This ensures consistent contact details across the organization.
 
 ## How to fix
 
@@ -15,7 +15,7 @@ Clarify from HR the correct business phone number format.
 Then run:
 
 ```powershell
-Update-MgUser -UserID testuser@contoso.com -BusinessPhones @("(123) 456-7890")
+Update-MgUser -UserID testuser@contoso.com -BusinessPhones @("(123) 456-7890 x123")
 ```
 
 ## Related links
