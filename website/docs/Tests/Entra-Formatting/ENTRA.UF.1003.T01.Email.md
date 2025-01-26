@@ -11,7 +11,7 @@ All user emails must have the first character of the given name in uppercase and
 ### How to fix
 
 1. Identify users whose email addresses do not follow this format.
-2. Correct their email local part or raise a Service Now ticket.
+2. Create ticket for those users.
 
 ### Related links
 
