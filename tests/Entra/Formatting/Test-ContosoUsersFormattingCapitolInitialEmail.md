@@ -1,14 +1,12 @@
+This test checks if user email addresses follow the policy of using a capital first initial plus a capitalized surname (e.g., JSmith).
 
-This test checks if the email address local part uses a capital first initial, followed by the last name with only its first letter capitalized.
+Contoso’s policy requires a consistent email format for branding.
 
-Contoso requires all users to follow this format for consistency:  
-• First character of the given name in uppercase  
-• Surname with its first character in uppercase, and the rest in lowercase  
-• Example: JSmith@contoso.com
+**To remediate this issue:**
 
-To remediate:  
-• Identify users whose email addresses do not match this format  
-• Raise a ticket in Service Now to correct the email format
+- Identify users with incorrect email formatting.
+- Update the local part to the correct capital initial plus capitalized surname format.
 
 <!--- Results --->
+
 %TestResult%

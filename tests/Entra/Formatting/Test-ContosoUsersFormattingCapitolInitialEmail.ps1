@@ -1,4 +1,3 @@
-
 function Test-ContosoUsersFormattingCapitolInitialEmail {
     $result = $true
     try {
@@ -17,7 +16,7 @@ function Test-ContosoUsersFormattingCapitolInitialEmail {
             $expectedLocalPart = "{0}{1}" -f $user.givenName.Substring(0,1).ToUpper(), ($user.surname.Substring(0,1).ToUpper() + $user.surname.Substring(1).ToLower())
             $actualLocalPart = ($user.mail -split "@")[0]
 
-            if ($actualLocalPart -ne $expectedLocalPart) {
+            if ($actualLocalPart -cne $expectedLocalPart) {
                 $result = $false
                 $incorrectEmailUsers += $user
             }
