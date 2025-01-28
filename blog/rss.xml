@@ -4,10 +4,24 @@
         <title>Custom Maester Test Collection Blog</title>
         <link>https://devclate.github.io/Custom-Maester-Tests/blog/</link>
         <description>Custom Maester Test Collection Blog</description>
-        <lastBuildDate>Mon, 27 Jan 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Jan 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[New State Abbrevation Test Added]]></title>
+            <link>https://devclate.github.io/Custom-Maester-Tests/blog/newstatetestadded/</link>
+            <guid>https://devclate.github.io/Custom-Maester-Tests/blog/newstatetestadded/</guid>
+            <pubDate>Tue, 28 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Added a new test for US users where it tests if the State attribute has a valid 2 letter abbreviation without periods value. If it doesn't, it will fail the test.]]></description>
+            <content:encoded><![CDATA[<p>Added a new test for US users where it tests if the State attribute has a valid 2 letter abbreviation without periods value. If it doesn't, it will fail the test.</p>
+<p><strong>Test:</strong> ENTRA.UF.1004.T01.USState</p>
+<p>What other tests are you looking for? Would you prefer these updates just in the changelog, or would you prefer both?</p>
+<p>Have a great day!</p>]]></content:encoded>
+            <category>maester</category>
+            <category>mtcustomtests</category>
+            <category>newtest</category>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://devclate.github.io/Custom-Maester-Tests/blog/welcome/</link>

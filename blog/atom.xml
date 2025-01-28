@@ -2,11 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://devclate.github.io/Custom-Maester-Tests/blog/</id>
     <title>Custom Maester Test Collection Blog</title>
-    <updated>2025-01-27T00:00:00.000Z</updated>
+    <updated>2025-01-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://devclate.github.io/Custom-Maester-Tests/blog/"/>
     <subtitle>Custom Maester Test Collection Blog</subtitle>
     <icon>https://devclate.github.io/Custom-Maester-Tests/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[New State Abbrevation Test Added]]></title>
+        <id>https://devclate.github.io/Custom-Maester-Tests/blog/newstatetestadded/</id>
+        <link href="https://devclate.github.io/Custom-Maester-Tests/blog/newstatetestadded/"/>
+        <updated>2025-01-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Added a new test for US users where it tests if the State attribute has a valid 2 letter abbreviation without periods value. If it doesn't, it will fail the test.]]></summary>
+        <content type="html"><![CDATA[<p>Added a new test for US users where it tests if the State attribute has a valid 2 letter abbreviation without periods value. If it doesn't, it will fail the test.</p>
+<p><strong>Test:</strong> ENTRA.UF.1004.T01.USState</p>
+<p>What other tests are you looking for? Would you prefer these updates just in the changelog, or would you prefer both?</p>
+<p>Have a great day!</p>]]></content>
+        <author>
+            <name>Clayton Tyger</name>
+            <uri>https://clatent.com</uri>
+        </author>
+        <category label="maester" term="maester"/>
+        <category label="mtcustomtests" term="mtcustomtests"/>
+        <category label="newtest" term="newtest"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://devclate.github.io/Custom-Maester-Tests/blog/welcome/</id>
