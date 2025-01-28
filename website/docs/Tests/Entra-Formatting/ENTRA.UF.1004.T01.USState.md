@@ -1,8 +1,8 @@
 ---
-title: ENTRA.UF.2001.T01.USState - US State Abbreviation Formatting
+title: ENTRA.UF.1004.T01.USState - US State Abbreviation Formatting
 description: Checks if the state attribute is in the format XX
 ---
-## ENTRA.UF.2001.T01.USState - US State Abbreviation Formatting
+## ENTRA.UF.1004.T01.USState - US State Abbreviation Formatting
 
 ## Description
 
