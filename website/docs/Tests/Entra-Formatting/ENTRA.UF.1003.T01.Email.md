@@ -10,8 +10,16 @@ All user emails must have the first character of the given name in uppercase and
 
 ### How to fix
 
-1. Identify users whose email addresses do not follow this format.
-2. Create ticket for those users.
+Clarify from HR the correct email format.
+
+Then run:
+
+```powershell
+Update-MgUser -UserID testuser@contoso.com -Mail "JSmith@contoso.com"
+```
+
+
+
 
 ### Related links
 

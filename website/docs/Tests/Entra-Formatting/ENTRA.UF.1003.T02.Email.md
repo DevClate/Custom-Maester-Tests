@@ -6,14 +6,16 @@ description: Ensure all user emails are in the correct lower case initial plus l
 
 ## Description
 
-All user emails must have a capital first initial plus a capitalized surname. Contoso’s policy requires a consistent email format for branding.
+All user emails must have a lower case first initial plus lower case surname. Contoso’s policy requires a consistent email format for branding.
 
 ## How to fix
 
-Identify users with incorrect email formatting. Then run:
+Clarify from HR the correct email format.
+
+Then run:
 
 ```powershell
-Update-MgUser -UserID testuser@contoso.com -Mail "JSmith@contoso.com"
+Update-MgUser -UserID testuser@contoso.com -Mail "jsmith@contoso.com"
 ```
 
 ## Related links
