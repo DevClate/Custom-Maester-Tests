@@ -4,10 +4,51 @@
         <title>Custom Maester Test Collection Blog</title>
         <link>https://devclate.github.io/Custom-Maester-Tests/blog/</link>
         <description>Custom Maester Test Collection Blog</description>
-        <lastBuildDate>Tue, 28 Jan 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Feb 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Only Allow Company Standards]]></title>
+            <link>https://devclate.github.io/Custom-Maester-Tests/blog/validatingtests/</link>
+            <guid>https://devclate.github.io/Custom-Maester-Tests/blog/validatingtests/</guid>
+            <pubDate>Mon, 03 Feb 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[I thought checking to see if they were filled in or even formatted correctly wasn't enough.. now you can config the validation.json file in the Validating folder with your company standards to make only those values pass. Here are the fields so far, and will be adding more!]]></description>
+            <content:encoded><![CDATA[<p>I thought checking to see if they were filled in or even formatted correctly wasn't enough.. now you can config the validation.json file in the Validating folder with your company standards to make only those values pass. Here are the fields so far, and will be adding more!</p>
+<ul>
+<li>
+<p>ENTRA.UV.1001 - Company Name</p>
+</li>
+<li>
+<p>ENTRA.UV.1002 - Street Address</p>
+</li>
+<li>
+<p>ENTRA.UV.1003 - City</p>
+</li>
+<li>
+<p>ENTRA.UV.1004 - State</p>
+</li>
+<li>
+<p>ENTRA.UV.1005 - Postal Code</p>
+</li>
+<li>
+<p>ENTRA.UV.1006 - Country</p>
+</li>
+<li>
+<p>ENTRA.UV.1007 - Business Phone Number</p>
+</li>
+<li>
+<p>ENTRA.UV.1008 - Job Title</p>
+</li>
+<li>
+<p>ENTRA.UV.1009 - Department</p>
+</li>
+</ul>
+<p>Hope you like this new update and let me know if you run into any issues or want to see any other updates. Please don't forget to star the repo and share to get the word out so more people can add theirs.</p>
+<p>Have a great day!</p>]]></content:encoded>
+            <category>mtcustomtests</category>
+            <category>newtest</category>
+        </item>
         <item>
             <title><![CDATA[New State Abbrevation Test Added]]></title>
             <link>https://devclate.github.io/Custom-Maester-Tests/blog/newstatetestadded/</link>

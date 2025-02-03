@@ -2,11 +2,56 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://devclate.github.io/Custom-Maester-Tests/blog/</id>
     <title>Custom Maester Test Collection Blog</title>
-    <updated>2025-01-28T00:00:00.000Z</updated>
+    <updated>2025-02-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://devclate.github.io/Custom-Maester-Tests/blog/"/>
     <subtitle>Custom Maester Test Collection Blog</subtitle>
     <icon>https://devclate.github.io/Custom-Maester-Tests/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Only Allow Company Standards]]></title>
+        <id>https://devclate.github.io/Custom-Maester-Tests/blog/validatingtests/</id>
+        <link href="https://devclate.github.io/Custom-Maester-Tests/blog/validatingtests/"/>
+        <updated>2025-02-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I thought checking to see if they were filled in or even formatted correctly wasn't enough.. now you can config the validation.json file in the Validating folder with your company standards to make only those values pass. Here are the fields so far, and will be adding more!]]></summary>
+        <content type="html"><![CDATA[<p>I thought checking to see if they were filled in or even formatted correctly wasn't enough.. now you can config the validation.json file in the Validating folder with your company standards to make only those values pass. Here are the fields so far, and will be adding more!</p>
+<ul>
+<li>
+<p>ENTRA.UV.1001 - Company Name</p>
+</li>
+<li>
+<p>ENTRA.UV.1002 - Street Address</p>
+</li>
+<li>
+<p>ENTRA.UV.1003 - City</p>
+</li>
+<li>
+<p>ENTRA.UV.1004 - State</p>
+</li>
+<li>
+<p>ENTRA.UV.1005 - Postal Code</p>
+</li>
+<li>
+<p>ENTRA.UV.1006 - Country</p>
+</li>
+<li>
+<p>ENTRA.UV.1007 - Business Phone Number</p>
+</li>
+<li>
+<p>ENTRA.UV.1008 - Job Title</p>
+</li>
+<li>
+<p>ENTRA.UV.1009 - Department</p>
+</li>
+</ul>
+<p>Hope you like this new update and let me know if you run into any issues or want to see any other updates. Please don't forget to star the repo and share to get the word out so more people can add theirs.</p>
+<p>Have a great day!</p>]]></content>
+        <author>
+            <name>Clayton Tyger</name>
+            <uri>https://clatent.com</uri>
+        </author>
+        <category label="mtcustomtests" term="mtcustomtests"/>
+        <category label="newtest" term="newtest"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[New State Abbrevation Test Added]]></title>
         <id>https://devclate.github.io/Custom-Maester-Tests/blog/newstatetestadded/</id>
