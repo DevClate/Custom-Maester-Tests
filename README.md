@@ -1,6 +1,6 @@
 # Custom Maester Test Collection
 
-A collection of customs tests that can be quickly dropped into [Maester](https://www.maester.dev) and customized to your enviroment where needed. 
+A collection of customs tests that can be quickly dropped into [Maester](https://www.maester.dev) and customized to your enviroment where needed.
 
 This repository is still in it's beginning stages and I plan to add many more tests to this repository that just aren't 365 focused as well. I welcome any contributions, please make sure you create all 3 files per test so that it works smoothly for everyone - [Creating Tests](https://devclate.github.io/Custom-Maester-Tests/docs/Getting-Started/create-a-test/)
 
@@ -9,6 +9,7 @@ There is also a webversion at [Custom Maester Tests](https://devclate.github.io/
 ## Introduction
 
 ### What are custom Maester tests?
+
 Custom Maester tests are tests that fully integrate into Maester's framework to test your Microsoft 365 tenant and anything else you want to using Pester tests. Also providing PowerShell scripts to resolve any issues where possible.
 
 ### Why custom Maester tests?
@@ -37,3 +38,20 @@ Now when you run your custom tests folder these tests should show
 
 For all files, run the Find and Replace in VSCode for "Contoso" with your company name. I have this as the last step to ensure the test works correctly in your enviroment before changing the name.
 
+## Using your own company standards
+
+### Step 1: Locate validation.json
+
+By default, the validation.json is location in the `tests/Entra/Validating` folder
+
+### Step 2: Update config file
+
+Update and or remove any fields that aren't necessary, or you can add more as well.
+
+### Step 3: Save config file
+
+Save the config file
+
+### Step 4: Run tests
+
+Run your tests again and see how the results change.

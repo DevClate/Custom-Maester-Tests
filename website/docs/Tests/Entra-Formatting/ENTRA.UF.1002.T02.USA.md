@@ -10,7 +10,7 @@ All users should have the correct format for their business phone number, e.g., 
 
 ## How to fix
 
-Clarify from HR the correct business phone number format.
+Confirm with HR the correct business phone number format for the user.
 
 Then run:
 

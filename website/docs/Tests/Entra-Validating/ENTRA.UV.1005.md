@@ -1,16 +1,16 @@
 ---
-title: ENTRA.UF.1001.T01.USA - All users should have a valid US postal code
-description: All users must have a valid US postal code
+title: ENTRA.UV.1005 - All users must have a valid postal code from the approved list
+description: All users must have a postal code from the approved list.
 ---
-## All users should have a valid US Postal Code
+## All users should have a valid Postal Code
 
 ## Description
 
-All users should have a valid US postal code. This information is often crucial for HR, facilities, and operations.
+All users should have a postal code from a known valid list. This information is crucial for HR, facilities, and operations
 
 ## How to fix
 
-Confirm with HR the correct US postal code for the user.
+Confirm wit HR the correct postal code for the user.
 
 Then run:
 

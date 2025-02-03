@@ -10,7 +10,7 @@ All users should have a valid Canadian postal code. This information is often cr
 
 ## How to fix
 
-Clarify from HR the correct Canadian postal code.
+Confirm with HR the correct Canadian postal code for the user.
 
 Then run:
 

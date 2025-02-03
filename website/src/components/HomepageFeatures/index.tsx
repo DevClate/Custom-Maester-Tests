@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/testing1r.svg').default,
     description: (
       <>
-        Over 15 tests are ready to use. Just add them to Maester custom folder and start
+        Over 30 tests are ready to use. Just add them to Maester custom folder and start
       </>
     ),
   },

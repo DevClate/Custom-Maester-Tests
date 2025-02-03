@@ -10,7 +10,7 @@ All user emails must have a lower case first initial plus lower case surname. Co
 
 ## How to fix
 
-Clarify from HR the correct email format.
+Confirm with HR the correct email format for the user.
 
 Then run:
 

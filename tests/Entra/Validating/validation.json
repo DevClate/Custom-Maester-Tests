@@ -1,0 +1,71 @@
+{
+  "validTitles": [
+    {
+      "title": "CEO"
+    },
+    {
+      "title": "IT Manager"
+    },
+    {
+      "title": "CFO"
+    },
+    {
+      "title": "HR Manager"
+    },
+    {
+      "title": "Administrator"
+    }
+  ],
+  "validDepartments": [
+    {
+      "department": "IT"
+    },
+    {
+      "department": "Finance"
+    },
+    {
+      "department": "HR"
+    },
+    {
+      "department": "Administration"
+    }
+  ],
+  "validLocations": [
+    {
+      "streetAddress": "123 Yes Street",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "12345",
+      "country": "USA",
+      "businessPhones": "123-456-7890",
+      "companyName": "Testing Company"
+    },
+    {
+      "streetAddress": "456 Elm St",
+      "city": "Hartford",
+      "state": "CT",
+      "zipCode": "54321",
+      "country": "USA",
+      "businessPhones": "321-654-0987",
+      "companyName": "Another Company"
+    },
+    {
+      "streetAddress": "88 Jefferson Road",
+      "city": "Miami",
+      "state": "MA",
+      "zipCode": "32543",
+      "country": "USA",
+      "businessPhones": "987-654-3210",
+      "companyName": "Yet Another Company"
+    },
+    {
+      "streetAddress": "62 Top Street",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zipCode": "85431",
+      "country": "USA",
+      "businessPhones": "456-789-0123",
+      "companyName": "Last Company"
+    }
+  ]
+}

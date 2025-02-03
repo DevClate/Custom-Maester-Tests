@@ -1,4 +1,4 @@
-function Test-ContosoUsersFormattingCapitolInitialEmail {
+function Test-ContosoUsersFormattingCapitalInitialEmail {
     $result = $true
     try {
         $users = Invoke-MtGraphRequest -RelativeUri "users" -Filter "userType eq 'Member'" -Select "displayName","givenName","surname","mail"

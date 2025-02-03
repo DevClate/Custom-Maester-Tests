@@ -6,12 +6,17 @@ description: Checks if the state attribute is in the format XX
 
 ## Description
 
-All users’ state attribute should be in the two-letter format with a period after each letter (e.g. NY).
+All users’ state attribute should be in the two-letter format (e.g. NY).
 
 ## How to fix
 
-Find users with incorrect state values and update them. Example:
+Confirm with HR the correct email format for the user.
+
+Then run:
+
+```powershell
 Update-MgUser -UserId user@contoso.com -State "NY"
+```
 
 ## Related links
 
