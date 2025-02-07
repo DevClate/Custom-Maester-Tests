@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1001 - All users should have a manager except for CEO
-description: All users should have an assigned manager except for the CEO
+description: Ensures all users should have an assigned manager except for the CEO
 ---
 ## All users should have a manager set except for CEO
 
@@ -10,7 +10,7 @@ All users should have an assigned manager except for the CEO
 
 ## How to fix
 
-Clarify from HR who the employee's manager is
+Confirm with HR who the employee's manager is.
 
 Then run:
 

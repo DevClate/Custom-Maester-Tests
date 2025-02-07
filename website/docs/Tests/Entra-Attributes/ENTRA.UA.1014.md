@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1014 - All users should have a sponsor set
-description: All users must have a valid sponsor attribute
+description: Ensures all users should have a valid sponsor attribute
 ---
 ## All users should have a sponsor set
 
@@ -10,7 +10,7 @@ All users should specify a sponsor for accountability and reference. This is oft
 
 ## How to fix
 
-Clarify with HR the correct sponsor.
+Confirm with HR the correct sponsor.
 
 Then run:
 

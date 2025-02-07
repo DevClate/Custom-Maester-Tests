@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1010 - All users should have a company name set
-description: All users should have an assigned company name
+description: Ensures all users should have an assigned company name
 ---
 ## All users should have a company name set
 
@@ -10,7 +10,7 @@ All users should have an assigned company name
 
 ## How to fix
 
-Clarify from HR which company the employee belongs to.
+Confirm with HR which company the employee belongs to.
 
 Then run:
 

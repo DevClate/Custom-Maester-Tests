@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UF.1002.T01.USA - All users should have a valid US business phone number - (123) 456-7890 x123
-description: All users must have a valid business number in the format (XXX) XXX-XXXX xXXX
+description: Ensures all users must have a valid business number in the format (XXX) XXX-XXXX xXXX
 ---
 ## All users should have a valid business phone number
 

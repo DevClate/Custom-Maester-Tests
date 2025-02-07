@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1015 - All users should have an employee hire date set
-description: All users must have a valid hire date attribute
+description: Ensures all users should have a valid hire date attribute
 ---
 ## All users should have an employee hire date set
 
@@ -10,7 +10,7 @@ All users should have a hire date. Hire dates are critical for tenure tracking a
 
 ## How to fix
 
-Clarify with HR the correct hire date.
+Confirm with HR the correct hire date.
 
 Then run:
 

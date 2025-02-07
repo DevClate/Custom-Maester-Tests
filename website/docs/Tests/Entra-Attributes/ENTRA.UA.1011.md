@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1011 - All users should have a mobile phone set
-description: All users within Contoso should have a valid mobile phone attribute
+description: Ensures all users should have a valid mobile phone
 ---
 ## All users should have a mobile phone set
 
@@ -10,7 +10,7 @@ All users should have a registered mobile phone number. This ensures communicati
 
 ## How to fix
 
-Clarify with HR to determine their valid mobile phone number.
+Confirm with HR to determine their valid mobile phone number.
 
 Then run:
 

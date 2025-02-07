@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1009 - All users should have an office location set
-description: All users must have a valid office location attribute
+description: Ensures all users should have a valid office location
 ---
 ## All users should have an office location set
 
@@ -10,7 +10,7 @@ All users should have an assigned office location. This helps with compliance, p
 
 ## How to fix
 
-Clarify from HR the correct office location.
+Confirm with HR the correct office location.
 
 Then run:
 

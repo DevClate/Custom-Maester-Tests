@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UV.1004 - All users must have a valid state from the approved list
-description: All users must have a valid state from the approved list.
+description: Ensures all users should have a valid state from the approved list.
 ---
 ## All users should have a valid State
 

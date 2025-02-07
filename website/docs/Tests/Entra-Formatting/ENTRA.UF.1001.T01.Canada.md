@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UF.1001.T01.Canada - All users should have a valid Canadian postal code
-description: All users must have a valid Canadian postal code
+description: Ensures all users should have a valid Canadian postal code
 ---
 ## All users should have a valid Canadian Postal Code
 

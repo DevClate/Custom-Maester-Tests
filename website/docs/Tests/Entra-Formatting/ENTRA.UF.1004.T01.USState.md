@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UF.1004.T01.USState - US State Abbreviation Formatting
-description: Checks if the state attribute is in the format XX
+description: Esnures all users have the state attribute in format XX
 ---
 ## ENTRA.UF.1004.T01.USState - US State Abbreviation Formatting
 

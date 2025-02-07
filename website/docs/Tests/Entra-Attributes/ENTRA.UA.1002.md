@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1002 - All users should have a job title set
-description: All users must have a valid job title attribute
+description: Ensures all users should have a valid job title
 ---
 ## All users should have a job title set
 
@@ -10,7 +10,7 @@ All users should have a valid job title. This information is often crucial for H
 
 ## How to fix
 
-Clarify from HR the correct job title.
+Confirm with HR the correct job title.
 
 Then run:
 

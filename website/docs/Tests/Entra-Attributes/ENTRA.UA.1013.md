@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1013 - All users should have a fax number set
-description: All users must have a valid fax number attribute
+description: Ensures all users should have a valid fax number attribute
 ---
 ## All users should have a fax number set
 
@@ -10,7 +10,7 @@ All users should have a valid fax number. Some legacy processes still rely on fa
 
 ## How to fix
 
-Clarify with HR the correct fax number.
+Confirm with HR the correct fax number.
 
 Then run:
 

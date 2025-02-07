@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1004 - All users should have a city set
-description: All users must have a valid city attribute
+description: Ensures all users should have a valid city
 ---
 ## All users should have a city set
 
@@ -10,7 +10,7 @@ All users should have a valid city attribute. This information is often crucial 
 
 ## How to fix
 
-Clarify from HR the correct city.
+Confirm with HR the correct city.
 
 Then run:
 

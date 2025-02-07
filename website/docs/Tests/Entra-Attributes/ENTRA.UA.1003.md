@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1003 - All users should have a street address set
-description: All users must have a valid street address attribute
+description: Ensures all users must have a valid street address
 ---
 ## All users should have a street address set
 
@@ -10,7 +10,7 @@ All users should have a valid street address. This information is often crucial 
 
 ## How to fix
 
-Clarify from HR the correct street address.
+Confirm with HR the correct street address.
 
 Then run:
 

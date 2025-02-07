@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1005 - All users should have a state set
-description: All users must have a valid state attribute
+description: Ensures all users should have a valid state
 ---
 ## All users should have a state set
 
@@ -10,7 +10,7 @@ All users should have a valid state attribute. This information is often crucial
 
 ## How to fix
 
-Clarify from HR the correct state.
+Confirm with HR the correct state.
 
 Then run:
 

@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1016 - All users should have an employee ID set
-description: All users must have a valid employee ID
+description: Ensures all users should have a valid employee ID
 ---
 ## All users should have an employee ID set
 
@@ -10,7 +10,7 @@ Employee IDs uniquely identify users and are crucial for HR and payroll processi
 
 ## How to fix
 
-Clarify with HR the correct employee ID.
+Confirm with HR the correct employee ID.
 
 Then run:
 

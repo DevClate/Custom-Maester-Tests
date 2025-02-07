@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1012 - All users should have a business phone set
-description: All users should have a business phone set
+description: Ensures all users should have a business phone
 ---
 ## All users should have a business phone set
 
@@ -10,7 +10,7 @@ All users should have a business phone assigned.
 
 ## How to fix
 
-Clarify with HR to determine their valid business phone number.
+Confirm with HR to determine their valid business phone number.
 
 Then run:
 

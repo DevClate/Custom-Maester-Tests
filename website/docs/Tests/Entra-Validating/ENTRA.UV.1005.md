@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UV.1005 - All users must have a valid postal code from the approved list
-description: All users must have a postal code from the approved list.
+description: Ensures all users have a postal code from the approved list.
 ---
 ## All users should have a valid Postal Code
 

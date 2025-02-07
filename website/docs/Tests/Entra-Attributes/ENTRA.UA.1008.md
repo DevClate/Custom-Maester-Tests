@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1008 - All users should have a department set
-description: All users should have an assigned department
+description: Ensures all users should have an assigned department
 ---
 ## All users should have a department set
 
@@ -10,7 +10,7 @@ All users should have an assigned department. This information is often crucial 
 
 ## How to fix
 
-Clarify from HR which department the employee belongs to.
+Confirm with HR which department the employee belongs to.
 
 Then run:
 

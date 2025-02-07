@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1006 - All users should have a postal code set
-description: All users must have a valid postal code attribute
+description: Ensures all users should have a valid postal code attribute
 ---
 ## All users should have a postal code set
 
@@ -10,7 +10,7 @@ All users should have a valid postal code attribute. This information is often c
 
 ## How to fix
 
-Clarify from HR the correct postal code.
+Confirm with HR the correct postal code.
 
 Then run:
 

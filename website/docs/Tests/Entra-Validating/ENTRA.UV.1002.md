@@ -6,7 +6,7 @@ description: Ensures all users have a valid street address from the approved lis
 
 ## Description
 
-All users must have a valid street address on record to ensure proper mail delivery and compliance with corporate data standards.
+All users should have a valid street address on record to ensure proper mail delivery and compliance with corporate data standards.
 
 ## How to fix
 

@@ -1,6 +1,6 @@
 ---
-title: ENTRA.UF.1003.T02.Email - All users must have a lower case first initial plus a lowerc case surname
-description: Ensure all user emails are in the correct lower case initial plus lower case surname format
+title: ENTRA.UF.1003.T02.Email - All users must have a lower case first initial plus a lower case surname
+description: Ensures all users emails are in the correct lower case initial plus lower case surname format
 ---
 ## All users must have a lower case first initial plus a lower case surname
 

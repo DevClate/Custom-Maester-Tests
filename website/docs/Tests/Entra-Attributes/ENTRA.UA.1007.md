@@ -1,6 +1,6 @@
 ---
 title: ENTRA.UA.1007 - All users should have a country set
-description: All users must have a valid country attribute
+description: Ensures all users should have a valid country
 ---
 ## All users should have a country set
 
@@ -10,7 +10,7 @@ All users should have a valid country attribute. This information is often cruci
 
 ## How to fix
 
-Clarify from HR the correct Country.
+Confirm with HR the correct Country.
 
 Then run:
 
