@@ -2,11 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://devclate.github.io/Custom-Maester-Tests/blog/</id>
     <title>Custom Maester Test Collection Blog</title>
-    <updated>2025-02-03T00:00:00.000Z</updated>
+    <updated>2025-02-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://devclate.github.io/Custom-Maester-Tests/blog/"/>
     <subtitle>Custom Maester Test Collection Blog</subtitle>
     <icon>https://devclate.github.io/Custom-Maester-Tests/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Validate full addresses and formatted tests]]></title>
+        <id>https://devclate.github.io/Custom-Maester-Tests/blog/validatinglocationtests/</id>
+        <link href="https://devclate.github.io/Custom-Maester-Tests/blog/validatinglocationtests/"/>
+        <updated>2025-02-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Added 3 new tests which I think the first two will be game changers. The first 2 are tests for validating locations, in which the user must have street, city, state, postal code, country, business phone, and company name the same as the valid location in the json. If you have 3 different addreses that your company uses, you can put each in there, and they are seen as 3 different addresses so it will only pass the location test if they have all the correct values for 1 location. The 2nd test is the same as the first, but I removed business phone in case your company doesn't have standard for it for all employees. The last test is formatting for user email accounts that should be formatted as all lower case and its first name period last name.]]></summary>
+        <content type="html"><![CDATA[<p>Added 3 new tests which I think the first two will be game changers. The first 2 are tests for validating locations, in which the user must have street, city, state, postal code, country, business phone, and company name the same as the valid location in the json. If you have 3 different addreses that your company uses, you can put each in there, and they are seen as 3 different addresses so it will only pass the location test if they have all the correct values for 1 location. The 2nd test is the same as the first, but I removed business phone in case your company doesn't have standard for it for all employees. The last test is formatting for user email accounts that should be formatted as all lower case and its first name period last name.</p>
+<p>ENTRA.UV.1010.L01 - All location information</p>
+<ul>
+<li>Test-ContosoUsersAllowedLocations.ps1</li>
+<li>Test-ContosoUsersAllowedLocations.Tests.ps1</li>
+<li>Test-ContosoUsersAllowedLocations.md</li>
+</ul>
+<p>ENTRA.UV.1010.L02 - All location information minus business phone</p>
+<ul>
+<li>Test-ContosoUsersAllowedLocationsNoBusinessPhones.ps1</li>
+<li>Test-ContosoUsersAllowedLocationsNoBusinessPhones.Tests.ps1</li>
+<li>Test-ContosoUsersAllowedLocationsNoBusinessPhones.md</li>
+</ul>
+<p>ENTRA.UF.1003.T03.Email - All lower case first name period last name</p>
+<ul>
+<li>Test-ContosoUsersFormattingFirstLastLowerCase.ps1</li>
+<li>Test-ContosoUsersFormattingFirstLastLowerCase.Tests.ps1</li>
+<li>Test-ContosoUsersFormattingFirstLastLowerCase.md</li>
+</ul>
+<p>Are there any other tests you'd like to see sooner than later?</p>
+<p>Have a great day!</p>]]></content>
+        <author>
+            <name>Clayton Tyger</name>
+            <uri>https://clatent.com</uri>
+        </author>
+        <category label="mtcustomtests" term="mtcustomtests"/>
+        <category label="newtest" term="newtest"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Only Allow Company Standards]]></title>
         <id>https://devclate.github.io/Custom-Maester-Tests/blog/validatingtests/</id>
