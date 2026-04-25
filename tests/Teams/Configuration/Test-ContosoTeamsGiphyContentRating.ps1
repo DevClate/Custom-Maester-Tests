@@ -19,13 +19,14 @@ function Test-ContosoTeamsGiphyContentRating {
 
         $allowGiphy = $TeamsMessagingPolicyGlobal.AllowGiphy
         $giphyRating = $TeamsMessagingPolicyGlobal.GiphyRatingType
+        $giphyRatingString = if ($null -ne $giphyRating) { $giphyRating.ToString() } else { "Not Set" }
 
         if ($allowGiphy -eq $true) {
             if ($giphyRating -eq "Strict") {
                 $TestResults = "Well done! Giphy content rating is set to Strict."
             } else {
                 $result = $false
-                $TestResults = "❌ **Failed:** Giphy is enabled but GiphyRatingType in [Messaging policies]($portalLink_MessagingPolicy) should be 'Strict' but is currently **$($giphyRating)**."
+                $TestResults = "❌ **Failed:** Giphy is enabled but GiphyRatingType in [Messaging policies]($portalLink_MessagingPolicy) should be 'Strict' but is currently $giphyRatingString."
             }
         } else {
             $TestResults = "Well done! Giphy is disabled."

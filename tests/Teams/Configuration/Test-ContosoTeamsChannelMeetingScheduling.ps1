@@ -17,10 +17,14 @@ function Test-ContosoTeamsChannelMeetingScheduling {
         $TeamsMeetingPolicyGlobal = $TeamsMeetingPolicy | Where-Object { $_.Identity -eq "Global" }
         $portalLink_MeetingPolicy = "https://admin.teams.microsoft.com/policies/meetings"
 
-        $allowChannelMeetingScheduling = $TeamsMeetingPolicyGlobal.AllowChannelMeetingScheduling
+        $allowChannelMeetingScheduling = if ($null -ne $TeamsMeetingPolicyGlobal.AllowChannelMeetingScheduling) { 
+            $TeamsMeetingPolicyGlobal.AllowChannelMeetingScheduling.ToString() 
+        } else { 
+            "Not Set" 
+        }
 
-        if ($null -ne $allowChannelMeetingScheduling) {
-            $TestResults = "ℹ️ AllowChannelMeetingScheduling in [Meeting policies]($portalLink_MeetingPolicy) is currently set to **$($allowChannelMeetingScheduling)**. Channel meeting scheduling allows users to create meetings within Teams channels. This should be controlled to ensure proper governance."
+        if ($null -ne $TeamsMeetingPolicyGlobal.AllowChannelMeetingScheduling) {
+            $TestResults = "ℹ️ AllowChannelMeetingScheduling in [Meeting policies]($portalLink_MeetingPolicy) is currently set to $allowChannelMeetingScheduling. Channel meeting scheduling allows users to create meetings within Teams channels. This should be controlled to ensure proper governance."
         } else {
             $TestResults = "⚠️ AllowChannelMeetingScheduling property not found in [Meeting policies]($portalLink_MeetingPolicy)"
         }

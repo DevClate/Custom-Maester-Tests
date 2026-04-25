@@ -16,9 +16,13 @@ function Test-ContosoTeamsBroadcastRecording {
         $broadcastPolicy = Get-CsTeamsMeetingBroadcastPolicy | Where-Object { $_.Identity -eq "Global" }
         $portalLink = "https://admin.teams.microsoft.com/policies/broadcast"
 
-        $recordingMode = $broadcastPolicy.BroadcastRecordingMode
+        $recordingMode = if ($null -ne $broadcastPolicy.BroadcastRecordingMode) { 
+            $broadcastPolicy.BroadcastRecordingMode.ToString() 
+        } else { 
+            "Not Set" 
+        }
 
-        $TestResults = "ℹ️ BroadcastRecordingMode in [Broadcast policies]($portalLink) is currently set to **$($recordingMode)** in the Global policy. Review this setting based on your organization's recording, compliance, and data retention requirements.`n`n"
+        $TestResults = "ℹ️ BroadcastRecordingMode in [Broadcast policies]($portalLink) is currently set to $recordingMode in the Global policy. Review this setting based on your organization's recording, compliance, and data retention requirements.`n`n"
         $TestResults += "**Description:** Broadcast recording settings determine who can record live events and how recordings are managed. Organizations should consider compliance requirements, data retention policies, storage costs, and privacy implications when configuring recording permissions."
         
         Add-MtTestResultDetail -Result $TestResults

@@ -16,9 +16,13 @@ function Test-ContosoTeamsCallForwardingToPhone {
         $callingPolicy = Get-CsTeamsCallingPolicy | Where-Object { $_.Identity -eq "Global" }
         $portalLink = "https://admin.teams.microsoft.com/policies/calling"
 
-        $allowCallForwardingToPhone = $callingPolicy.AllowCallForwardingToPhone
+        $allowCallForwardingToPhone = if ($null -ne $callingPolicy.AllowCallForwardingToPhone) { 
+            $callingPolicy.AllowCallForwardingToPhone.ToString() 
+        } else { 
+            "Not Set" 
+        }
 
-        $TestResults = "ℹ️ AllowCallForwardingToPhone in [Calling policies]($portalLink) is currently set to **$($allowCallForwardingToPhone)** in the Global policy. Review this setting as it can potentially enable toll fraud if misused. Call forwarding to external phone numbers (PSTN) can be exploited for toll fraud, where attackers forward calls to premium-rate numbers, resulting in significant charges. Organizations should carefully review this setting and consider disabling it or implementing strict monitoring and controls."
+        $TestResults = "ℹ️ AllowCallForwardingToPhone in [Calling policies]($portalLink) is currently set to $allowCallForwardingToPhone in the Global policy. Review this setting as it can potentially enable toll fraud if misused. Call forwarding to external phone numbers (PSTN) can be exploited for toll fraud, where attackers forward calls to premium-rate numbers, resulting in significant charges. Organizations should carefully review this setting and consider disabling it or implementing strict monitoring and controls."
 
         Add-MtTestResultDetail -Result $TestResults
 

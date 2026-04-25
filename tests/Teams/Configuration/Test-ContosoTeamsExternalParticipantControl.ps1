@@ -17,13 +17,17 @@ function Test-ContosoTeamsExternalParticipantControl {
         $TeamsMeetingPolicyGlobal = $TeamsMeetingPolicy | Where-Object { $_.Identity -eq "Global" }
         $portalLink_MeetingPolicy = "https://admin.teams.microsoft.com/policies/meetings"
 
-        $allowExternalControl = $TeamsMeetingPolicyGlobal.AllowExternalParticipantGiveRequestControl
+        $allowExternalControl = if ($null -ne $TeamsMeetingPolicyGlobal.AllowExternalParticipantGiveRequestControl) { 
+            $TeamsMeetingPolicyGlobal.AllowExternalParticipantGiveRequestControl.ToString() 
+        } else { 
+            "Not Set" 
+        }
 
-        if ($allowExternalControl -eq $false) {
+        if ($TeamsMeetingPolicyGlobal.AllowExternalParticipantGiveRequestControl -eq $false) {
             $TestResults = "Well done! External participants cannot give or request control."
         } else {
             $result = $false
-            $TestResults = "❌ **Failed:** AllowExternalParticipantGiveRequestControl in [Meeting policies]($portalLink_MeetingPolicy) should be False but is currently **$($allowExternalControl)**."
+            $TestResults = "❌ **Failed:** AllowExternalParticipantGiveRequestControl in [Meeting policies]($portalLink_MeetingPolicy) should be False but is currently $allowExternalControl."
         }
 
         Add-MtTestResultDetail -Result $TestResults

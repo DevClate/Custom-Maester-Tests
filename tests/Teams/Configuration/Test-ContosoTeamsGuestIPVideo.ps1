@@ -16,9 +16,13 @@ function Test-ContosoTeamsGuestIPVideo {
         $guestMeetingConfig = Get-CsTeamsGuestMeetingConfiguration
         $portalLink = "https://admin.teams.microsoft.com/company-wide-settings/guest-configuration"
 
-        $allowIPVideo = $guestMeetingConfig.AllowIPVideo
+        $allowIPVideo = if ($null -ne $guestMeetingConfig.AllowIPVideo) { 
+            $guestMeetingConfig.AllowIPVideo.ToString() 
+        } else { 
+            "Not Set" 
+        }
 
-        $TestResults = "ℹ️ AllowIPVideo in [Guest configuration]($portalLink) is currently set to **$($allowIPVideo)**. Review this setting based on your organization's requirements. IP video for guests is typically allowed to enable full meeting participation. However, organizations with specific security requirements may choose to disable this feature."
+        $TestResults = "ℹ️ AllowIPVideo in [Guest configuration]($portalLink) is currently set to $allowIPVideo. Review this setting based on your organization's requirements. IP video for guests is typically allowed to enable full meeting participation. However, organizations with specific security requirements may choose to disable this feature."
 
         Add-MtTestResultDetail -Result $TestResults
 

@@ -16,13 +16,17 @@ function Test-ContosoTeamsGuestMeetNow {
         $guestMeetingConfig = Get-CsTeamsGuestMeetingConfiguration
         $portalLink = "https://admin.teams.microsoft.com/company-wide-settings/guest-configuration"
 
-        $allowMeetNow = $guestMeetingConfig.AllowMeetNow
+        $allowMeetNow = if ($null -ne $guestMeetingConfig.AllowMeetNow) { 
+            $guestMeetingConfig.AllowMeetNow.ToString() 
+        } else { 
+            "Not Set" 
+        }
 
-        if ($allowMeetNow -eq $false) {
+        if ($guestMeetingConfig.AllowMeetNow -eq $false) {
             $TestResults = "Well done! Guests cannot start ad-hoc meetings."
         } else {
             $result = $false
-            $TestResults = "❌ **Failed:** AllowMeetNow in [Guest configuration]($portalLink) should be False but is currently **$($allowMeetNow)**."
+            $TestResults = "❌ **Failed:** AllowMeetNow in [Guest configuration]($portalLink) should be False but is currently $allowMeetNow."
         }
 
         Add-MtTestResultDetail -Result $TestResults

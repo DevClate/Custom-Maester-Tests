@@ -26,12 +26,17 @@ function Test-ContosoTeamsExternalNonTrustedChat {
         }
 
         $allowExternalNonTrustedChat = $TeamsMeetingPolicyGlobal.AllowExternalNonTrustedMeetingChat
+        $allowExternalNonTrustedChatString = if ($null -ne $allowExternalNonTrustedChat) { 
+            $allowExternalNonTrustedChat.ToString() 
+        } else { 
+            "Not Set" 
+        }
 
         if ($allowExternalNonTrustedChat -eq $false) {
             $TestResults = "Well done! External non-trusted meeting chat is disabled."
         } else {
             $result = $false
-            $TestResults = "❌ **Failed:** AllowExternalNonTrustedMeetingChat in [Meeting policies]($portalLink_MeetingPolicy) should be False but is currently **$($allowExternalNonTrustedChat)**."
+            $TestResults = "❌ **Failed:** AllowExternalNonTrustedMeetingChat in [Meeting policies]($portalLink_MeetingPolicy) should be False but is currently $allowExternalNonTrustedChatString."
         }
 
         Add-MtTestResultDetail -Result $TestResults

@@ -16,13 +16,17 @@ function Test-ContosoTeamsGuestTranscription {
         $guestMeetingConfig = Get-CsTeamsGuestMeetingConfiguration
         $portalLink = "https://admin.teams.microsoft.com/company-wide-settings/guest-configuration"
 
-        $allowTranscription = $guestMeetingConfig.AllowTranscription
+        $allowTranscription = if ($null -ne $guestMeetingConfig.AllowTranscription) { 
+            $guestMeetingConfig.AllowTranscription.ToString() 
+        } else { 
+            "Not Set" 
+        }
 
-        if ($allowTranscription -eq $false) {
+        if ($guestMeetingConfig.AllowTranscription -eq $false) {
             $TestResults = "Well done! Guests cannot control transcription."
         } else {
             $result = $false
-            $TestResults = "❌ **Failed:** AllowTranscription in [Guest configuration]($portalLink) should be False but is currently **$($allowTranscription)**."
+            $TestResults = "❌ **Failed:** AllowTranscription in [Guest configuration]($portalLink) should be False but is currently $allowTranscription."
         }
 
         Add-MtTestResultDetail -Result $TestResults

@@ -16,13 +16,17 @@ function Test-ContosoTeamsGuestScreenSharing {
         $guestMeetingConfig = Get-CsTeamsGuestMeetingConfiguration
         $portalLink = "https://admin.teams.microsoft.com/company-wide-settings/guest-configuration"
 
-        $screenSharingMode = $guestMeetingConfig.ScreenSharingMode
+        $screenSharingMode = if ($null -ne $guestMeetingConfig.ScreenSharingMode) { 
+            $guestMeetingConfig.ScreenSharingMode.ToString() 
+        } else { 
+            "Not Set" 
+        }
 
-        if ($screenSharingMode -eq 'Disabled' -or $screenSharingMode -eq 'SingleApplication') {
+        if ($guestMeetingConfig.ScreenSharingMode -eq 'Disabled' -or $guestMeetingConfig.ScreenSharingMode -eq 'SingleApplication') {
             $TestResults = "Well done! Guest screen sharing is appropriately restricted (Mode: $screenSharingMode)."
         } else {
             $result = $false
-            $TestResults = "❌ **Failed:** ScreenSharingMode in [Guest configuration]($portalLink) should be 'Disabled' or 'SingleApplication' but is currently **$($screenSharingMode)**."
+            $TestResults = "❌ **Failed:** ScreenSharingMode in [Guest configuration]($portalLink) should be 'Disabled' or 'SingleApplication' but is currently $screenSharingMode."
         }
 
         Add-MtTestResultDetail -Result $TestResults
