@@ -39,24 +39,25 @@ Proper configuration of external collaboration settings is essential to enable b
 
 **Configure Federation Security:**
 
-1. Navigate to [Teams Admin Center - External Access](https://admin.teams.microsoft.com/company-wide-settings/external-access)
+1. Navigate to [Teams Admin Center - External Access](https://admin.teams.microsoft.com/company-wide-settings/external-communications)
 2. Under **Teams and Skype for Business users in external organizations**:
    - Choose **Allow only specific external domains** (recommended)
    - Add trusted partner domains to the allowed list
    - Or use **Block specific external domains** if you need open federation
 3. Click **Save**
 
-**Disable Public Users (Skype) if Not Needed:**
-
-1. Navigate to [Teams Admin Center - External Access](https://admin.teams.microsoft.com/company-wide-settings/external-access)
-2. Under **Skype users**:
-   - Toggle **Allow users in my organization to communicate with Skype users** to **Off**
-3. Click **Save**
-
 **Secure Guest Meeting Capabilities:**
 
 1. Navigate to [Teams Admin Center - Meeting Policies](https://admin.teams.microsoft.com/policies/meetings)
 2. Review **AllowPSTNUsersToBypassLobby** setting and set to **Off** for better security
+
+**Disable Public Users (Skype) - PowerShell Only:**
+
+The AllowPublicUsers setting (Skype consumer communication) is no longer configurable in the Teams Admin Center UI. To modify this setting, use PowerShell:
+
+```powershell
+Set-CsTeamsClientConfiguration -AllowPublicUsers $false
+```
 
 ## Learn More
 

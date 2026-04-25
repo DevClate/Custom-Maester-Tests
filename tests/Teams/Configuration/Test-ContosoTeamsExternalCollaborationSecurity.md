@@ -4,14 +4,13 @@ Contoso's company policy requires external collaboration to be configured with a
 
 **To remediate this issue:**
 
-- Navigate to [Teams Admin Center - External Access](https://admin.teams.microsoft.com/company-wide-settings/external-access)
+- Navigate to [Teams Admin Center - External Access](https://admin.teams.microsoft.com/company-wide-settings/external-communications)
 - Under **Teams and Skype for Business users in external organizations**:
   - Choose **Allow only specific external domains** (recommended)
   - Add trusted partner domains to the allowed list
-- Under **Skype users**:
-  - Toggle **Allow users in my organization to communicate with Skype users** to **Off** if not needed
 - Navigate to [Teams Admin Center - Meeting Policies](https://admin.teams.microsoft.com/policies/meetings)
 - Review **AllowPSTNUsersToBypassLobby** setting and set to **Off** for better security
+- **Note:** AllowPublicUsers (Skype) setting is checked by this test but may only be configurable via PowerShell using `Set-CsTeamsClientConfiguration`
 
 **Learn more:**
 

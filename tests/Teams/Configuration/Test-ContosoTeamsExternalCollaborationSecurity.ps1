@@ -20,7 +20,7 @@ function Test-ContosoTeamsExternalCollaborationSecurity {
         $federationConfig = Get-CsTenantFederationConfiguration
         $meetingPolicy = Get-CsTeamsMeetingPolicy -Identity Global
 
-        $portalLink = "https://admin.teams.microsoft.com/company-wide-settings/external-access"
+        $portalLink = "https://admin.teams.microsoft.com/company-wide-settings/external-communications"
 
         # Check 1: Public users (Skype for Business and Skype consumer)
         if ($clientConfig.AllowPublicUsers -eq $true) {
