@@ -16,11 +16,15 @@ This repository contains custom [Maester](https://www.maester.dev) tests for Mic
 
 ### Test Categories
 
-Tests are organized in `tests/Entra/` by category:
+**Entra ID Tests** - Organized in `tests/Entra/`:
 
 - **Attributes/** - Tests for missing required user attributes (business phone, manager, department, etc.)
 - **Formatting/** - Tests validating attribute format compliance (phone numbers, postal codes, email formats)
 - **Validating/** - Tests checking attributes against allowed values defined in `validation.json`
+
+**Teams Tests** - Organized in `tests/Teams/`:
+
+- **Configuration/** - Tests for Teams client configuration and security settings (third-party storage, external access, etc.)
 
 ## File Conventions
 
@@ -82,11 +86,15 @@ Describe "Contoso" -Tag "{TEST_ID}", "Entra", "CustomTests", "{Category}", "User
 
 ### Test IDs
 
-Format: `ENTRA.{Category}.{Number}[.{Variant}]`
+**Entra ID Test IDs** - Format: `ENTRA.{Category}.{Number}[.{Variant}]`
 
 - **UA** - User Attributes (e.g., `ENTRA.UA.1001`)
 - **UF** - User Formatting (e.g., `ENTRA.UF.1002.T01.USA`)
 - **UV** - User Validation (e.g., `ENTRA.UV.1003`)
+
+**Teams Test IDs** - Format: `TEAMS.{Category}.{Number}`
+
+- **TC** - Teams Configuration (e.g., `TEAMS.TC.5002`)
 
 ### Markdown Documentation (.md)
 
@@ -238,6 +246,28 @@ $manager = Get-MgUserManager -UserId $user.Id -ErrorAction SilentlyContinue
 ```
 
 **Select only needed attributes** to improve performance.
+
+## Teams PowerShell Patterns
+
+**Common Teams configuration checks:**
+```powershell
+# Check Teams connection
+if (!(Test-MtConnection Teams)) {
+    Add-MtTestResultDetail -SkippedBecause NotConnectedTeams
+    return $null
+}
+
+# Get Teams client configuration
+$clientConfig = Get-CsTeamsClientConfiguration
+
+# Check specific setting
+$allowBox = $clientConfig.AllowBox
+
+# Set configuration (for remediation examples)
+Set-CsTeamsClientConfiguration -AllowBox $false
+```
+
+**Teams tests use PowerShell Teams module** instead of Graph API.
 
 ## Links
 

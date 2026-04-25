@@ -1,0 +1,8 @@
+{
+  "label": "Teams Configuration",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Tests for Microsoft Teams configuration and security settings."
+  }
+}
