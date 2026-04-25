@@ -1,0 +1,65 @@
+---
+title: TEAMS.TC.5020 - External collaboration should be configured with security controls
+description: Reviews external collaboration settings including federation, guests, and public users
+---
+
+# TEAMS.TC.5020 - External Collaboration Security
+
+## Description
+
+This test checks external collaboration security settings in Microsoft Teams including federation, guest access, and public users.
+
+Proper configuration of external collaboration settings is essential to enable business collaboration while preventing unauthorized access and data leakage.
+
+## Security Checks Performed
+
+1. **Public Users (Skype):**
+   - Verify AllowPublicUsers setting
+   - Assess risk of consumer Skype communication
+
+2. **Federation Configuration:**
+   - Check if federation is open to all domains
+   - Review allowed/blocked domain lists
+   - Assess federation security posture
+
+3. **Guest Meeting Capabilities:**
+   - Review PSTN lobby bypass settings
+   - Check guest meeting permissions
+
+## Why This Matters
+
+- **Data Protection:** External users may inadvertently or intentionally leak sensitive data
+- **Compliance:** Many regulations require controls on external communication
+- **Identity Verification:** Federation and guest access require proper identity management
+- **Meeting Security:** External participants may record or share meeting content
+- **Phishing/Social Engineering:** Attackers may use external access to target employees
+- **Intellectual Property:** External collaboration may expose confidential information
+
+## Remediation Steps
+
+**Configure Federation Security:**
+
+1. Navigate to [Teams Admin Center - External Access](https://admin.teams.microsoft.com/company-wide-settings/external-access)
+2. Under **Teams and Skype for Business users in external organizations**:
+   - Choose **Allow only specific external domains** (recommended)
+   - Add trusted partner domains to the allowed list
+   - Or use **Block specific external domains** if you need open federation
+3. Click **Save**
+
+**Disable Public Users (Skype) if Not Needed:**
+
+1. Navigate to [Teams Admin Center - External Access](https://admin.teams.microsoft.com/company-wide-settings/external-access)
+2. Under **Skype users**:
+   - Toggle **Allow users in my organization to communicate with Skype users** to **Off**
+3. Click **Save**
+
+**Secure Guest Meeting Capabilities:**
+
+1. Navigate to [Teams Admin Center - Meeting Policies](https://admin.teams.microsoft.com/policies/meetings)
+2. Review **AllowPSTNUsersToBypassLobby** setting and set to **Off** for better security
+
+## Learn More
+
+- [Manage external meetings and chat in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/manage-external-access)
+- [Manage guest access in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/guest-access)
+- [Security best practices for Teams](https://learn.microsoft.com/en-us/microsoftteams/teams-security-guide)
