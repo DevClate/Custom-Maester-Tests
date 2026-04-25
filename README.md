@@ -20,6 +20,31 @@ These are tests that aren't standard in Maester, but integrate into it.. Ensure 
 
 Allows you to have all of your tests under a single pane of glass that are specific to your company while gaining all of the benefits of Maester.
 
+## AI-Assisted Test Creation
+
+This repository includes AI-powered tools to help you quickly generate new tests following all conventions:
+
+### `/create-maester-test` Skill
+
+Use GitHub Copilot Chat to automatically generate all 3 required test files:
+
+```
+/create-maester-test Create a test to check if users have valid phone numbers
+```
+
+The AI will:
+- ✅ Generate all 3 files (`.ps1`, `.tests.ps1`, `.md`)
+- ✅ Follow naming conventions
+- ✅ Use correct test ID format
+- ✅ Include proper Graph API calls
+- ✅ Add appropriate exclusions and error handling
+
+**[Learn more about AI-assisted test creation →](https://devclate.github.io/Custom-Maester-Tests/docs/Getting-Started/using-ai-to-create-tests/)**
+
+### Automatic Validation
+
+A validation hook reminds you to create all 3 files and ensures consistent naming across your test set.
+
 ## Getting Started
 
 ### Step 1: Download Tests from GitHub
