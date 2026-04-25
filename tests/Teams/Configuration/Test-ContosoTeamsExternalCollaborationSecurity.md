@@ -5,7 +5,7 @@ Contoso's company policy requires external collaboration to be configured with a
 **To remediate this issue:**
 
 - Navigate to [Teams Admin Center - External Access](https://admin.teams.microsoft.com/company-wide-settings/external-communications)
-- Under **Teams and Skype for Business users in external organizations**:
+- Under **Teams users in external organizations**:
   - Choose **Allow only specific external domains** (recommended)
   - Add trusted partner domains to the allowed list
 - Navigate to [Teams Admin Center - Meeting Policies](https://admin.teams.microsoft.com/policies/meetings)
