@@ -15,9 +15,7 @@ Immersive Reader is an accessibility feature that helps users with reading and c
 
 ## Why This Matters
 
-Immersive Reader provides text-to-speech, reading comprehension tools, and translation features that help users with dyslexia, vision impairments, or language barriers access Teams content more effectively.
-
-## Why This Matters
+Immersive Reader provides text-to-speech, reading comprehension tools, and translation features that help users with dyslexia, vision impairments, or language barriers access Teams content more effectively:
 
 - **Accessibility:** Supports users with reading difficulties or disabilities
 - **Inclusion:** Enables broader participation in Teams conversations

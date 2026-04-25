@@ -15,9 +15,7 @@ Contoso's company policy requires that meeting recordings stay within the tenant
 
 ## Why This Matters
 
-Data residency requirements often mandate that sensitive data, including meeting recordings, remain within specific geographic boundaries for compliance with local regulations.
-
-## Why This Matters
+Data residency requirements often mandate that sensitive data, including meeting recordings, remain within specific geographic boundaries for compliance with local regulations:
 
 - **Compliance:** GDPR, HIPAA, and other regulations mandate data residency
 - **Legal Requirements:** Local laws may prohibit data export

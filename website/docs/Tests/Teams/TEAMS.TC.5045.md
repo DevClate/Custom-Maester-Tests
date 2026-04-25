@@ -15,9 +15,7 @@ Message translation features send message content to external translation servic
 
 ## Why This Matters
 
-Message translation allows users to automatically translate messages to their preferred language, improving communication in multilingual teams. However, translation requires sending message content to external translation services, which presents security and privacy considerations.
-
-## Why This Matters
+Message translation allows users to automatically translate messages to their preferred language, improving communication in multilingual teams. However, translation requires sending message content to external translation services, which presents security and privacy considerations:
 
 - **Data Privacy:** Messages sent to external translation services
 - **Sensitive Information:** Confidential data may be exposed

@@ -15,9 +15,7 @@ Contoso's company policy requires memes to be disabled as they can contain inapp
 
 ## Why This Matters
 
-While memes can add personality to conversations, they also present risks for inappropriate content, copyright violations, and unprofessional communication in business environments.
-
-## Why This Matters
+While memes can add personality to conversations, they also present risks for inappropriate content, copyright violations, and unprofessional communication in business environments:
 
 - **Content Control:** Prevents inappropriate image sharing
 - **Professionalism:** Maintains business communication standards

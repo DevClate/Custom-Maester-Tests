@@ -15,9 +15,7 @@ Contoso's company policy requires URL previews to be disabled as they can leak i
 
 ## Why This Matters
 
-URL previews automatically fetch and display content from links shared in conversations, which can leak information to external sites and expose users to phishing links.
-
-## Why This Matters
+URL previews automatically fetch and display content from links shared in conversations, which can leak information to external sites and expose users to phishing links:
 
 - **Information Leakage:** URL preview requests reveal that your organization is accessing specific links
 - **Phishing Risk:** Previews may render malicious content or trigger tracking pixels

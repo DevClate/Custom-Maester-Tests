@@ -15,9 +15,7 @@ Contoso's company policy requires stickers to be disabled as they can contain in
 
 ## Why This Matters
 
-Stickers add visual elements to conversations but can introduce risks including inappropriate content, copyright violations, and reduced professionalism in business communications.
-
-## Why This Matters
+Stickers add visual elements to conversations but can introduce risks including inappropriate content, copyright violations, and reduced professionalism in business communications:
 
 - **Content Control:** Prevents inappropriate image sharing
 - **Professionalism:** Maintains business communication standards

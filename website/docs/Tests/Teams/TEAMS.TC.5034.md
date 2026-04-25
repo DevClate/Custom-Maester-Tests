@@ -15,9 +15,7 @@ Contoso's company policy requires Meet Now to be disabled as it allows users to 
 
 ## Why This Matters
 
-Meet Now allows users to instantly start ad-hoc meetings. When enabled for anonymous users, it creates security risks by allowing unauthorized individuals to create meeting spaces.
-
-## Why This Matters
+Meet Now allows users to instantly start ad-hoc meetings. When enabled for anonymous users, it creates security risks by allowing unauthorized individuals to create meeting spaces:
 
 - **Unauthorized Access:** Anonymous users shouldn't create meeting spaces
 - **Security Control:** Prevents uncontrolled meeting creation

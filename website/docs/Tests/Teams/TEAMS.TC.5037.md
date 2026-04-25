@@ -15,9 +15,7 @@ The Outlook add-in allows users to schedule Teams meetings directly from Outlook
 
 ## Why This Matters
 
-The Teams add-in for Outlook allows users to schedule Teams meetings directly from Outlook, providing seamless integration between the two platforms.
-
-## Why This Matters
+The Teams add-in for Outlook allows users to schedule Teams meetings directly from Outlook, providing seamless integration between the two platforms:
 
 - **User Experience:** Simplifies meeting scheduling workflow
 - **Productivity:** Reduces friction in creating Teams meetings

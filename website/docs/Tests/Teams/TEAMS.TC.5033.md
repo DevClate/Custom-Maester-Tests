@@ -15,9 +15,7 @@ This comprehensive security review examines cloud recording, transcription, and 
 
 ## Why This Matters
 
-These settings impact data residency, compliance, and information security.
-
-## Why This Matters
+These settings impact data residency, compliance, and information security:
 
 - **Data Residency:** Recording storage location affects compliance
 - **Compliance:** Industry regulations may restrict where recordings are stored

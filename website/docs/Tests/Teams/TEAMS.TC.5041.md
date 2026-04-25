@@ -15,9 +15,7 @@ This informational test examines the message deletion permissions for chat owner
 
 ## Why This Matters
 
-This permission affects chat governance, moderation capabilities, and data retention.
-
-## Why This Matters
+This permission affects chat governance, moderation capabilities, and data retention:
 
 - **Governance:** Controls message lifecycle management
 - **Moderation:** Enables removal of inappropriate content

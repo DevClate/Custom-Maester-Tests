@@ -15,9 +15,7 @@ Contoso's company policy requires PSTN callers (phone dial-in users) to be authe
 
 ## Why This Matters
 
-PSTN users dial into meetings via telephone. Allowing them to bypass the lobby creates security risks since phone callers are harder to verify than authenticated users.
-
-## Why This Matters
+PSTN users dial into meetings via telephone. Allowing them to bypass the lobby creates security risks since phone callers are harder to verify than authenticated users:
 
 - **Access Control:** Phone callers need authentication
 - **Security:** Prevents unauthorized dial-in access

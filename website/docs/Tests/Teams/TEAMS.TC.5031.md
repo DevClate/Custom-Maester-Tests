@@ -15,9 +15,7 @@ Contoso's company policy requires that users can report security concerns direct
 
 ## Why This Matters
 
-When enabled, users can report suspicious messages, links, and security concerns directly from the Teams interface, empowering your workforce to participate in organizational security.
-
-## Why This Matters
+When enabled, users can report suspicious messages, links, and security concerns directly from the Teams interface, empowering your workforce to participate in organizational security:
 
 - **User Empowerment:** Staff can report security concerns immediately
 - **Early Detection:** Quickly identify phishing and social engineering attempts

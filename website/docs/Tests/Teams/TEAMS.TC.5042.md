@@ -15,9 +15,7 @@ Scoped people search restricts directory searches to defined groups rather than 
 
 ## Why This Matters
 
-When enabled, this setting restricts the people search directory to specific groups or organizational units, limiting which users can be discovered and contacted within Teams.
-
-## Why This Matters
+When enabled, this setting restricts the people search directory to specific groups or organizational units, limiting which users can be discovered and contacted within Teams:
 
 - **Privacy:** Controls user discoverability
 - **Security:** Limits organizational visibility

@@ -15,9 +15,7 @@ This informational test checks the notification settings for Skype for Business 
 
 ## Why This Matters
 
-As organizations migrate from Skype for Business to Teams, these notifications help inform users about the upgrade process and encourage adoption.
-
-## Why This Matters
+As organizations migrate from Skype for Business to Teams, these notifications help inform users about the upgrade process and encourage adoption:
 
 - **Change Management:** Keeps users informed during migration
 - **Adoption:** Encourages transition to Teams

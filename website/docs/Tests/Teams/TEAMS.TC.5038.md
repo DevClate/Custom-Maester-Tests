@@ -15,9 +15,7 @@ Private meetings are not visible on users' calendars. This informational test re
 
 ## Why This Matters
 
-Private meeting scheduling allows users to create meetings that don't appear in other users' calendars or meeting lists, providing privacy for sensitive discussions.
-
-## Why This Matters
+Private meeting scheduling allows users to create meetings that don't appear in other users' calendars or meeting lists, providing privacy for sensitive discussions:
 
 - **Privacy:** Protects sensitive meeting topics
 - **Confidentiality:** Keeps private discussions discreet

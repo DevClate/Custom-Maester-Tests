@@ -15,9 +15,7 @@ This security review examines multiple critical settings across Teams policies i
 
 ## Why This Matters
 
-This holistic assessment provides visibility into your organization's overall Teams security posture.
-
-## Why This Matters
+This holistic assessment provides visibility into your organization's overall Teams security posture:
 
 - **Security Baseline:** Establishes overall security stance
 - **Risk Assessment:** Identifies security gaps across multiple areas
