@@ -2,8 +2,8 @@ BeforeAll {
     . $PSScriptRoot/Test-ContosoTeamsAllowEgnyte.ps1
 }
 
-Describe "Contoso" -Tag "TEAMS.TC.5019", "Teams", "CustomTests", "Configuration", "ThirdPartyStorage" {
-    It "TEAMS.TC.5019: Egnyte integration should be disabled" {
+Describe "Contoso" -Tag "TEAMS.TC.5005", "Teams", "CustomTests", "Configuration", "ThirdPartyStorage" {
+    It "TEAMS.TC.5005: Egnyte integration should be disabled" {
         $result = Test-ContosoTeamsAllowEgnyte
         
         if ($null -ne $result) {

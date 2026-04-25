@@ -3,7 +3,7 @@ function Test-ContosoTeamsAllowEgnyte {
     .SYNOPSIS
         Checks if Egnyte integration is disabled in Teams
     .DESCRIPTION
-        TEAMS.TC.5019 - Egnyte integration should be disabled to prevent data exfiltration
+        TEAMS.TC.5005 - Egnyte integration should be disabled to prevent data exfiltration
     #>
     $result = $true
 

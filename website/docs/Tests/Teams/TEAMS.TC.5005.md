@@ -1,71 +1,137 @@
 ---
-title: TEAMS.TC.5005 - Email into channel should be disabled
-description: Ensures email into channel is disabled to prevent bypassing email security controls
+title: TEAMS.TC.5005 - Egnyte integration should be disabled
+description: Ensures Egnyte integration is disabled in Teams to prevent data exfiltration
 ---
-## Email into channel should be disabled
+
+# TEAMS.TC.5005 - Egnyte Integration Should Be Disabled
 
 ## Description
 
-Email into channel must be disabled in Microsoft Teams to prevent bypassing email security controls. When enabled, this feature allows users to send emails directly to a Teams channel using a channel-specific email address, which can bypass critical security protections.
+This test checks if Egnyte integration is disabled in Microsoft Teams to prevent data exfiltration.
 
-**Security Risks:**
+## Policy Statement
 
-Email into channel can bypass:
-- Anti-phishing protection
-- Anti-malware scanning
-- Data Loss Prevention (DLP) policies
-- Email encryption requirements
-- External sender warnings
-- Attachment filtering rules
+Contoso's company policy requires all third-party cloud storage services, including Egnyte, to be disabled in Teams to maintain control over corporate data.
 
-This creates a potential security gap where malicious content could be delivered directly into Teams channels without proper security scrutiny.
+## Why This Matters
 
-:::warning Security Risk
-Email into channel bypasses organizational email security controls, creating an unprotected pathway for malicious content delivery.
-:::
+Allowing third-party storage integrations in Teams creates several risks:
 
-## How to fix
+### Data Exfiltration
+- Users can upload corporate data to external storage services
+- Data may be stored outside organizational control
+- Difficult to monitor and audit data transfers
+- Potential for data leaks through third-party services
 
-### Disable Email into Channel in Teams Admin Center
+### Compliance Risks
+- May violate data residency requirements
+- Third-party services may not meet compliance standards
+- Difficult to enforce retention policies on external storage
+- Could breach contractual obligations about data storage
 
-1. Navigate to the [Teams admin center - Teams settings](https://admin.teams.microsoft.com/company-wide-settings/teams-settings)
-2. Expand **Email integration**
-3. Locate **Allow users to send emails to a channel email address**
-4. Set this option to **Off**
-5. Click **Save**
+### Security Concerns
+- Third-party services may have different security standards
+- Increased attack surface
+- Potential for unauthorized access
+- Loss of DLP protection when data leaves Microsoft 365
 
-### Verify via PowerShell
+## How to Fix
+
+### Disable via Teams Admin Center
+
+1. Navigate to [Teams Admin Center - Client Configuration](https://admin.teams.microsoft.com/company-wide-settings/teams-settings)
+2. Scroll to **Files** section
+3. Set **Egnyte** to **Off**
+4. Click **Save**
+
+### Disable via PowerShell
 
 ```powershell
-# Connect to Teams
-Connect-MicrosoftTeams
-
-# Check current email into channel setting
-Get-CsTeamsClientConfiguration | Select-Object AllowEmailIntoChannel
-
-# Disable email into channel
-Set-CsTeamsClientConfiguration -AllowEmailIntoChannel $false
-
-# Verify the change
-Get-CsTeamsClientConfiguration | Select-Object AllowEmailIntoChannel
+# Disable Egnyte integration
+Set-CsTeamsClientConfiguration -AllowEgnyte $false
 ```
 
-## Impact
+### Verify Current Setting
 
-Disabling email into channel will:
-- ✅ Force all email to go through organizational security controls
-- ✅ Ensure consistent application of DLP policies
-- ✅ Maintain anti-phishing and anti-malware protection
-- ⚠️ Users can no longer email content directly to channels
+```powershell
+# Check current configuration
+Get-CsTeamsClientConfiguration | Select-Object AllowEgnyte
 
-:::info Alternative
-Users can still share email content by forwarding emails to their own inbox and then sharing in Teams, ensuring security controls are applied.
-:::
+# Should return:
+# AllowEgnyte
+# -----------
+# False
+```
 
-## Related links
+### Check All Third-Party Storage Settings
 
-* [Teams admin center - Teams settings](https://admin.teams.microsoft.com/company-wide-settings/teams-settings)
-* [Manage Teams settings for your organization](https://learn.microsoft.com/microsoftteams/enable-features-office-365)
-* [Send email to a channel in Teams](https://learn.microsoft.com/microsoftteams/send-an-email-to-a-channel-in-teams)
-* [Security and compliance in Teams](https://learn.microsoft.com/microsoftteams/security-compliance-overview)
-* [Set-CsTeamsClientConfiguration](https://learn.microsoft.com/powershell/module/teams/set-csteamsclientconfiguration)
+```powershell
+# Review all third-party storage options
+Get-CsTeamsClientConfiguration | Select-Object AllowDropBox, AllowBox, AllowGoogleDrive, AllowShareFile, AllowEgnyte
+
+# Recommended secure configuration (all disabled):
+# AllowDropBox      : False
+# AllowBox          : False
+# AllowGoogleDrive  : False
+# AllowShareFile    : False
+# AllowEgnyte       : False
+```
+
+## Impact Assessment
+
+### Before Disabling
+
+**Consider:**
+- Are any teams currently using Egnyte integration?
+- Is there business justification for third-party storage?
+- What is the migration plan for existing data?
+- Have users been notified of the change?
+
+### After Disabling
+
+**Users will:**
+- No longer see Egnyte as a file sharing option in Teams
+- Need to use OneDrive/SharePoint for file storage
+- Require alternative methods to access Egnyte files
+
+**Organization gains:**
+- Better control over corporate data
+- Improved compliance posture
+- Reduced data exfiltration risk
+- Centralized data governance
+
+## Approved Storage Solutions
+
+Instead of third-party storage, use Microsoft-approved solutions:
+
+### OneDrive for Business
+- Personal file storage
+- Full DLP protection
+- Audit logging
+- Compliance integration
+
+### SharePoint Online
+- Team file storage
+- Advanced permissions
+- Retention policies
+- eDiscovery support
+
+### Teams Files
+- Channel-based storage (backed by SharePoint)
+- Automatic collaboration
+- Integrated with Teams chat
+- Version control
+
+## Related Tests
+
+- [TEAMS.TC.5001 - Dropbox Integration](TEAMS.TC.5001.md)
+- [TEAMS.TC.5002 - Box Integration](TEAMS.TC.5002.md)
+- [TEAMS.TC.5003 - Google Drive Integration](TEAMS.TC.5003.md)
+- [TEAMS.TC.5004 - ShareFile Integration](TEAMS.TC.5004.md)
+
+## Learn More
+
+- [Manage Teams settings for your organization](https://learn.microsoft.com/microsoftteams/enable-features-office-365)
+- [Control third-party storage in Teams](https://learn.microsoft.com/microsoftteams/enhance-office-365-groups)
+- [Teams security best practices](https://learn.microsoft.com/microsoftteams/security-best-practices)
+- [Data Loss Prevention in Teams](https://learn.microsoft.com/purview/dlp-microsoft-teams)
