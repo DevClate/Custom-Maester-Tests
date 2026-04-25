@@ -1,6 +1,6 @@
 ---
-sidebar_label: "TEAMS.TC.5017"
 title: TEAMS.TC.5017 - Broadcast Attendee Visibility
+description: Ensures broadcast attendee visibility is configured to protect attendee privacy
 ---
 
 # TEAMS.TC.5017 - Broadcast Attendee Visibility

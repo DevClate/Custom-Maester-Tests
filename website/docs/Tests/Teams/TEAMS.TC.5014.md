@@ -1,6 +1,6 @@
 ---
-sidebar_label: "TEAMS.TC.5014"
 title: TEAMS.TC.5014 - Channel Meeting Scheduling
+description: Checks if channel meeting scheduling is appropriately configured for governance
 ---
 
 # TEAMS.TC.5014 - Channel Meeting Scheduling

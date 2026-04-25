@@ -1,6 +1,6 @@
 ---
-sidebar_label: "TEAMS.TC.5013"
 title: TEAMS.TC.5013 - Data Loss Prevention for Teams
+description: Provides guidance on configuring DLP policies to protect sensitive data in Teams
 ---
 
 # TEAMS.TC.5013 - Data Loss Prevention for Teams

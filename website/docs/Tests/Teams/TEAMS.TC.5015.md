@@ -1,6 +1,6 @@
 ---
-sidebar_label: "TEAMS.TC.5015"
 title: TEAMS.TC.5015 - Broadcast Recording Settings
+description: Reviews broadcast recording settings based on compliance and data retention requirements
 ---
 
 # TEAMS.TC.5015 - Broadcast Recording Settings

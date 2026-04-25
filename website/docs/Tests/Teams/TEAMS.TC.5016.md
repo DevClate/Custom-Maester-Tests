@@ -1,6 +1,6 @@
 ---
-sidebar_label: "TEAMS.TC.5016"
 title: TEAMS.TC.5016 - Chat Data Protection
+description: Checks if chat settings protect sensitive data from leaking to external services
 ---
 
 # TEAMS.TC.5016 - Chat Data Protection

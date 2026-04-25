@@ -1,6 +1,6 @@
 ---
-sidebar_label: "TEAMS.TC.5011"
 title: TEAMS.TC.5011 - Broadcast Transcription Settings
+description: Reviews broadcast transcription settings for accessibility and compliance requirements
 ---
 
 # TEAMS.TC.5011 - Broadcast Transcription Settings

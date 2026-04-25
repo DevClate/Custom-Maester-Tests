@@ -1,5 +1,5 @@
 ---
-title: TEAMS.TC.5011 - Auto-admitted users should be restricted
+title: TEAMS.TC.5010 - Auto-admitted users should be restricted
 description: Ensures auto-admitted users setting is properly restricted to prevent unauthorized access
 ---
 ## Auto-admitted users should be restricted

@@ -1,6 +1,6 @@
 ---
-sidebar_label: "TEAMS.TC.5018"
 title: TEAMS.TC.5018 - Chat Permission Roles
+description: Checks if chat permission roles align with collaboration and security requirements
 ---
 
 # TEAMS.TC.5018 - Chat Permission Roles

@@ -1,6 +1,6 @@
 ---
-sidebar_label: "TEAMS.TC.5012"
 title: TEAMS.TC.5012 - Call Forwarding to Phone
+description: Checks if call forwarding to PSTN is configured appropriately to prevent toll fraud
 ---
 
 # TEAMS.TC.5012 - Call Forwarding to Phone
