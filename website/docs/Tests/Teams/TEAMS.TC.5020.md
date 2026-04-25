@@ -9,6 +9,12 @@ description: Reviews external collaboration settings including federation, guest
 
 This test checks external collaboration security settings in Microsoft Teams including federation, guest access, and public users.
 
+## Policy Statement
+
+Contoso's company policy requires external collaboration to be configured with appropriate security controls to prevent unauthorized access and data leakage.
+
+## Why This Matters
+
 Proper configuration of external collaboration settings is essential to enable business collaboration while preventing unauthorized access and data leakage.
 
 ## Security Checks Performed

@@ -9,6 +9,12 @@ description: Review of private meeting scheduling capabilities
 
 This informational test reviews the status of private meeting scheduling in Microsoft Teams.
 
+## Policy Statement
+
+Private meetings are not visible on users' calendars. This informational test reviews the status of private meeting scheduling to ensure it aligns with organizational meeting visibility requirements.
+
+## Why This Matters
+
 Private meeting scheduling allows users to create meetings that don't appear in other users' calendars or meeting lists, providing privacy for sensitive discussions.
 
 ## Why This Matters

@@ -9,7 +9,9 @@ description: Ensures guests cannot use Meet Now to prevent unauthorized meetings
 
 This test checks if the Meet Now feature is disabled for guest users in Microsoft Teams.
 
-Guests should not be able to initiate ad-hoc meetings to maintain organizational control over meeting creation and governance.
+## Policy Statement
+
+Contoso's company policy requires that guests cannot start ad-hoc meetings using the Meet Now feature. Allowing guests to create meetings could lead to unauthorized meetings, loss of meeting governance, and potential security risks. Internal users should maintain control over meeting creation.
 
 ## Why This Matters
 

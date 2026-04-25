@@ -7,11 +7,13 @@ description: Comprehensive review of multiple Teams security settings including 
 
 ## Description
 
-This comprehensive security review test examines multiple critical security settings across Teams:
-- Anonymous meeting join capabilities
-- Third-party storage integration (Box, Dropbox, Google Drive, Citrix ShareFile)
-- External participant controls
-- Guest access configurations
+This comprehensive security review test examines multiple critical security settings across Teams: anonymous meeting join capabilities, third-party storage integration (Box, Dropbox, Google Drive, Citrix ShareFile), external participant controls, and guest access configurations.
+
+## Policy Statement
+
+This security review examines multiple critical settings across Teams policies including anonymous meeting access, third-party storage integration, and external communication capabilities. Organizations should regularly review these settings to ensure they align with security requirements.
+
+## Why This Matters
 
 This holistic assessment provides visibility into your organization's overall Teams security posture.
 

@@ -9,9 +9,13 @@ description: Reviews guest IP video permissions based on organizational requirem
 
 This test reviews the guest IP video setting in Microsoft Teams.
 
-This is an **informational test** that reports the current configuration for organizational review.
+## Policy Statement
+
+Contoso's company policy recommends reviewing guest IP video permissions based on organizational security and collaboration requirements. IP video for guests is typically allowed to enable full meeting participation, but organizations with specific security or bandwidth concerns may choose to disable this feature.
 
 ## Why This Matters
+
+This is an **informational test** that reports the current configuration for organizational review.
 
 IP video for guests enables visual communication in meetings but should be reviewed based on:
 

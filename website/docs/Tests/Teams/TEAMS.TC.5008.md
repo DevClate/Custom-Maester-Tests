@@ -6,7 +6,13 @@ description: Ensures anonymous users are restricted from dialing out to prevent 
 
 ## Description
 
-Anonymous users should not be allowed to dial out from Microsoft Teams meetings to prevent toll fraud and unauthorized PSTN (Public Switched Telephone Network) usage. Allowing anonymous dial-out creates potential for abuse and unexpected communication charges.
+This test checks if anonymous users are restricted from dialing out from Microsoft Teams meetings.
+
+## Policy Statement
+
+Contoso's company policy requires that anonymous users should not be allowed to dial out from meetings to prevent toll fraud and unauthorized PSTN usage. Allowing anonymous dial-out creates potential for abuse and unexpected communication charges.
+
+## Why This Matters
 
 **Security and Financial Risks:**
 

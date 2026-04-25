@@ -9,6 +9,12 @@ description: Ensures meeting recordings are stored within the organization's geo
 
 This test checks if meeting recording storage is restricted to the organization's geographic region.
 
+## Policy Statement
+
+Contoso's company policy requires that meeting recordings stay within the tenant's home region for data residency and compliance purposes. This is important for organizations with regulatory requirements about data location.
+
+## Why This Matters
+
 Data residency requirements often mandate that sensitive data, including meeting recordings, remain within specific geographic boundaries for compliance with local regulations.
 
 ## Why This Matters

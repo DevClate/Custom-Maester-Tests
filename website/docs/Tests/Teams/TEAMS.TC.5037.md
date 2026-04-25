@@ -9,6 +9,12 @@ description: Review of Microsoft Teams Meeting Add-In for Outlook status
 
 This informational test reviews the status of the Microsoft Teams Meeting Add-In for Outlook.
 
+## Policy Statement
+
+The Outlook add-in allows users to schedule Teams meetings directly from Outlook. This informational test reviews the integration status to ensure users have the expected meeting scheduling capabilities.
+
+## Why This Matters
+
 The Teams add-in for Outlook allows users to schedule Teams meetings directly from Outlook, providing seamless integration between the two platforms.
 
 ## Why This Matters

@@ -9,6 +9,12 @@ description: Ensures anonymous users cannot start ad-hoc meetings
 
 This test checks if the "Meet Now" feature is disabled in anonymous meeting join policies.
 
+## Policy Statement
+
+Contoso's company policy requires Meet Now to be disabled as it allows users to start unscheduled meetings that may bypass meeting controls and security policies. This is important for maintaining governance over Teams meetings.
+
+## Why This Matters
+
 Meet Now allows users to instantly start ad-hoc meetings. When enabled for anonymous users, it creates security risks by allowing unauthorized individuals to create meeting spaces.
 
 ## Why This Matters

@@ -9,6 +9,12 @@ description: Ensures memes are disabled to prevent inappropriate content sharing
 
 This test checks if memes are disabled in Microsoft Teams messaging policies.
 
+## Policy Statement
+
+Contoso's company policy requires memes to be disabled as they can contain inappropriate content and are unprofessional in business communications. This is important for maintaining a professional workplace environment.
+
+## Why This Matters
+
 While memes can add personality to conversations, they also present risks for inappropriate content, copyright violations, and unprofessional communication in business environments.
 
 ## Why This Matters

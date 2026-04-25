@@ -9,7 +9,9 @@ description: Ensures guest screen sharing is restricted to Disabled or SingleApp
 
 This test checks if guest screen sharing is appropriately restricted in Microsoft Teams.
 
-Guest screen sharing should be limited to prevent unintended data exposure from guest desktops.
+## Policy Statement
+
+Contoso's company policy requires guest screen sharing to be limited to prevent data leakage and unauthorized information exposure. Allowing full screen sharing by guests could expose sensitive information visible on the guest's desktop.
 
 ## Why This Matters
 

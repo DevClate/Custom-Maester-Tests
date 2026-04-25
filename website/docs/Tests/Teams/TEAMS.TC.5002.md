@@ -6,7 +6,13 @@ description: Ensures Box integration is disabled in Teams to prevent data exfilt
 
 ## Description
 
-Box integration must be disabled in Microsoft Teams to prevent data exfiltration. Third-party storage integration like Box allows files to be stored outside organizational control, which may not comply with data governance, retention, and compliance policies.
+This test checks if Box integration is disabled in Microsoft Teams.
+
+## Policy Statement
+
+Contoso's company policy requires that third-party storage integration like Box must be disabled to prevent data exfiltration. Files stored through Box are outside organizational control and may not comply with data governance, retention, and compliance policies.
+
+## Why This Matters
 
 When Box integration is enabled, users can:
 - Share files to Box from Teams channels

@@ -6,7 +6,13 @@ description: Ensures email into channel is disabled to prevent bypassing email s
 
 ## Description
 
-Email into channel must be disabled in Microsoft Teams to prevent bypassing email security controls. When enabled, this feature allows users to send emails directly to a Teams channel using a channel-specific email address, which can bypass critical security protections.
+This test checks if email into channel is disabled in Microsoft Teams.
+
+## Policy Statement
+
+Contoso's company policy requires that email into channel must be disabled to prevent bypassing email security controls. Email into channel can bypass anti-phishing, anti-malware, and Data Loss Prevention (DLP) policies, creating a potential security gap for malicious content delivery.
+
+## Why This Matters
 
 **Security Risks:**
 

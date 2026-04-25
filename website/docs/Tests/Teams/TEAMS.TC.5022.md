@@ -9,7 +9,9 @@ description: Prevents external participants from controlling shared screens to p
 
 This test checks if external participants can give or request control of shared screens in Microsoft Teams meetings.
 
-Allowing external control creates significant security risks including unauthorized access to internal systems and data.
+## Policy Statement
+
+Contoso's company policy requires that external participants cannot give or request control of shared content to prevent unauthorized access to internal systems and data. Allowing external control could enable malicious actors to access sensitive information or perform unauthorized actions on internal systems.
 
 ## Why This Matters
 

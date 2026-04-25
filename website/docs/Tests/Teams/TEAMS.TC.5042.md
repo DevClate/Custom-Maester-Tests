@@ -9,6 +9,12 @@ description: Review of directory search scope restrictions in Teams
 
 This informational test reviews the status of scoped people search and access in Microsoft Teams.
 
+## Policy Statement
+
+Scoped people search restricts directory searches to defined groups rather than the entire organization. This informational test reviews the setting for privacy and directory access considerations.
+
+## Why This Matters
+
 When enabled, this setting restricts the people search directory to specific groups or organizational units, limiting which users can be discovered and contacted within Teams.
 
 ## Why This Matters

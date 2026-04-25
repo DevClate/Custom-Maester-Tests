@@ -9,6 +9,12 @@ description: Ensures URL previews are disabled to prevent information leakage an
 
 This test checks if URL previews are disabled in Microsoft Teams conversations.
 
+## Policy Statement
+
+Contoso's company policy requires URL previews to be disabled as they can leak information to external sites when links are shared in conversations. This is important for preventing metadata exposure and maintaining data security.
+
+## Why This Matters
+
 URL previews automatically fetch and display content from links shared in conversations, which can leak information to external sites and expose users to phishing links.
 
 ## Why This Matters

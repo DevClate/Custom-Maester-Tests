@@ -6,7 +6,13 @@ description: Ensures Dropbox integration is disabled in Teams to prevent data ex
 
 ## Description
 
-Dropbox integration must be disabled in Microsoft Teams to prevent data exfiltration. Third-party storage integration like Dropbox allows files to be stored outside organizational control, which may not comply with data governance, retention, and compliance policies.
+This test checks if Dropbox integration is disabled in Microsoft Teams.
+
+## Policy Statement
+
+Contoso's company policy requires that third-party storage integration like Dropbox must be disabled to prevent data exfiltration. Files stored through Dropbox are outside organizational control and may not comply with data governance, retention, and compliance policies.
+
+## Why This Matters
 
 When Dropbox integration is enabled, users can:
 - Share files to Dropbox from Teams channels

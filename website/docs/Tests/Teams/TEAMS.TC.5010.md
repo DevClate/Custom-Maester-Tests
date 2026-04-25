@@ -6,7 +6,13 @@ description: Ensures auto-admitted users setting is properly restricted to preve
 
 ## Description
 
-The auto-admitted users setting must be properly restricted in Microsoft Teams meetings to prevent unauthorized access. This setting controls who can bypass the meeting lobby and join directly without waiting for admission by the organizer.
+This test checks if the auto-admitted users setting is properly restricted in Microsoft Teams meetings.
+
+## Policy Statement
+
+Contoso's company policy requires that auto-admitted users must be restricted to **EveryoneInCompany**, **OrganizerOnly**, or **InvitedUsers** to prevent unauthorized access to meetings. This setting controls who can bypass the meeting lobby and join directly.
+
+## Why This Matters
 
 **Acceptable Settings:**
 

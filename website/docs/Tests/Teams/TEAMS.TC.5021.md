@@ -9,7 +9,9 @@ description: Ensures external non-trusted meeting chat is disabled to prevent da
 
 This test checks if external non-trusted meeting chat is disabled in Microsoft Teams.
 
-When enabled, this feature allows external participants from non-federated organizations to participate in meeting chat, which could expose sensitive information and create vectors for phishing attacks.
+## Policy Statement
+
+Contoso's company policy requires external non-trusted meeting chat to be disabled to prevent data exfiltration and phishing attacks. When enabled, this feature allows external participants from non-federated organizations to participate in meeting chat, which could expose sensitive information.
 
 ## Why This Matters
 

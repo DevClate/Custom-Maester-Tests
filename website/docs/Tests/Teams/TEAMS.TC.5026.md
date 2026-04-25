@@ -9,9 +9,13 @@ description: Reviews guest meeting chat permissions based on collaboration and s
 
 This test reviews the guest meeting chat setting in Microsoft Teams.
 
-This is an **informational test** that reports the current configuration for organizational review.
+## Policy Statement
+
+Contoso's company policy recommends reviewing guest meeting chat permissions based on organizational collaboration and security requirements. Meeting chat for guests enables collaboration but also creates potential for sensitive information sharing.
 
 ## Why This Matters
+
+This is an **informational test** that reports the current configuration for organizational review.
 
 Meeting chat for guests enables collaboration but creates considerations for:
 

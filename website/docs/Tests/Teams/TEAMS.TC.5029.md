@@ -9,7 +9,9 @@ description: Ensures guests cannot control meeting transcription to prevent unau
 
 This test checks if transcription control is disabled for guest users in Microsoft Teams.
 
-Guests should not be able to control meeting transcription to prevent unauthorized data capture and maintain control over sensitive meeting content.
+## Policy Statement
+
+Contoso's company policy requires that guests cannot control meeting transcription to prevent unauthorized data capture and maintain control over sensitive meeting content. Transcriptions create searchable records of meeting conversations that could contain confidential information.
 
 ## Why This Matters
 

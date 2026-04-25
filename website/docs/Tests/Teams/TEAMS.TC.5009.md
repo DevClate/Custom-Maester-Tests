@@ -6,7 +6,13 @@ description: Ensures app sideloading is disabled to enforce security review proc
 
 ## Description
 
-App sideloading must be disabled in Microsoft Teams to enforce security review processes. Sideloading allows users to install custom apps that haven't gone through the organization's approval and security review process, potentially introducing security risks, malicious code, or non-compliant applications.
+This test checks if app sideloading is disabled in Microsoft Teams.
+
+## Policy Statement
+
+Contoso's company policy requires that app sideloading must be disabled to enforce security review processes. Sideloading allows users to install custom apps that haven't gone through the organization's approval and security review process, potentially introducing security risks and malicious code.
+
+## Why This Matters
 
 **Security Concerns:**
 

@@ -9,7 +9,9 @@ description: Ensures Giphy content rating is set to Strict to prevent inappropri
 
 This test checks if Giphy content rating is set to Strict when Giphy is enabled in Microsoft Teams.
 
-The Strict setting applies the most restrictive content filtering to prevent inappropriate or offensive GIFs from being shared in Teams conversations.
+## Policy Statement
+
+Contoso's company policy requires Giphy content rating to be set to Strict if Giphy is enabled to prevent inappropriate or offensive content from being shared in Teams conversations. The Strict setting applies the most restrictive content filtering.
 
 ## Why This Matters
 

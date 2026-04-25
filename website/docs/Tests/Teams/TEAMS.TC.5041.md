@@ -9,6 +9,12 @@ description: Review of owner permissions to delete messages in group chats
 
 This informational test reviews the status of the setting that allows chat owners to delete messages from group chats.
 
+## Policy Statement
+
+This informational test examines the message deletion permissions for chat owners, which is important for chat governance and moderation capabilities.
+
+## Why This Matters
+
 This permission affects chat governance, moderation capabilities, and data retention.
 
 ## Why This Matters

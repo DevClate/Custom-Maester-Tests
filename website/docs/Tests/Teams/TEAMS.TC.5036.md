@@ -9,6 +9,12 @@ description: Review of notifications sent to Skype for Business users during Tea
 
 This informational test reviews the status of notifications sent to Skype for Business users about the transition to Microsoft Teams.
 
+## Policy Statement
+
+This informational test checks the notification settings for Skype for Business users during the Teams upgrade process. Organizations migrating from Skype for Business should consider enabling this to inform users.
+
+## Why This Matters
+
 As organizations migrate from Skype for Business to Teams, these notifications help inform users about the upgrade process and encourage adoption.
 
 ## Why This Matters

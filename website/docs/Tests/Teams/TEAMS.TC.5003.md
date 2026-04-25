@@ -6,9 +6,13 @@ description: Ensures Google Drive integration is disabled in Teams to prevent da
 
 ## Description
 
-Google Drive integration must be disabled in Microsoft Teams to prevent data exfiltration. Third-party storage integration like Google Drive allows files to be stored outside organizational control, which may not comply with data governance, retention, and compliance policies.
+This test checks if Google Drive integration is disabled in Microsoft Teams.
 
-Users should rely on approved organizational storage solutions like SharePoint and OneDrive for Business instead of consumer cloud storage services.
+## Policy Statement
+
+Contoso's company policy requires that third-party storage integration like Google Drive must be disabled to prevent data exfiltration. Files stored through Google Drive are outside organizational control and may not comply with data governance, retention, and compliance policies. Users should rely on approved organizational storage solutions like SharePoint and OneDrive.
+
+## Why This Matters
 
 When Google Drive integration is enabled, users can:
 - Share files to Google Drive from Teams channels

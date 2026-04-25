@@ -6,7 +6,13 @@ description: Ensures anonymous users are restricted from joining Teams meetings
 
 ## Description
 
-Anonymous users should not be allowed to join Microsoft Teams meetings to reduce exposure to uninvited attendees and potential security threats. Organizations should use lobby controls and proper meeting authentication to manage external participants.
+This test checks if anonymous users are restricted from joining Microsoft Teams meetings.
+
+## Policy Statement
+
+Contoso's company policy requires that anonymous users should not be allowed to join meetings to reduce exposure to uninvited attendees and potential security threats. Organizations should use lobby controls and proper meeting authentication instead.
+
+## Why This Matters
 
 **Security Concerns:**
 

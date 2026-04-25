@@ -9,6 +9,12 @@ description: Ensures stickers are disabled to prevent inappropriate content shar
 
 This test checks if stickers are disabled in Microsoft Teams messaging policies.
 
+## Policy Statement
+
+Contoso's company policy requires stickers to be disabled as they can contain inappropriate content and are unprofessional in business communications. This is important for maintaining a professional workplace environment.
+
+## Why This Matters
+
 Stickers add visual elements to conversations but can introduce risks including inappropriate content, copyright violations, and reduced professionalism in business communications.
 
 ## Why This Matters

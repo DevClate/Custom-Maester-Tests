@@ -6,7 +6,13 @@ description: Ensures anonymous users are restricted from starting Teams meetings
 
 ## Description
 
-Anonymous users should not be allowed to start Microsoft Teams meetings to prevent unauthorized individuals from creating meetings in your organization's Teams environment. Meeting control should remain with authenticated users who can be held accountable.
+This test checks if anonymous users are restricted from starting Microsoft Teams meetings.
+
+## Policy Statement
+
+Contoso's company policy requires that anonymous users should not be allowed to start meetings. This prevents unauthorized individuals from creating meetings in your organization's Teams environment and ensures meeting control remains with authenticated users.
+
+## Why This Matters
 
 **Security Concerns:**
 

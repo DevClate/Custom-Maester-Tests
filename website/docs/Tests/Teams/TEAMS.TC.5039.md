@@ -9,6 +9,12 @@ description: Ensures PSTN callers must wait in lobby for admission
 
 This test checks if PSTN (phone) users are required to wait in the meeting lobby before being admitted.
 
+## Policy Statement
+
+Contoso's company policy requires PSTN callers (phone dial-in users) to be authenticated through the meeting lobby. This is important for security as phone callers cannot be pre-authenticated and should be admitted by meeting organizers.
+
+## Why This Matters
+
 PSTN users dial into meetings via telephone. Allowing them to bypass the lobby creates security risks since phone callers are harder to verify than authenticated users.
 
 ## Why This Matters

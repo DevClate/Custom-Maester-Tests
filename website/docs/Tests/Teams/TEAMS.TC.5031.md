@@ -9,6 +9,12 @@ description: Ensures users can report security concerns directly from Teams
 
 This test verifies that security end user reporting is enabled in Microsoft Teams.
 
+## Policy Statement
+
+Contoso's company policy requires that users can report security concerns directly from Teams. This is important for maintaining a secure collaboration environment and enabling quick response to potential security threats.
+
+## Why This Matters
+
 When enabled, users can report suspicious messages, links, and security concerns directly from the Teams interface, empowering your workforce to participate in organizational security.
 
 ## Why This Matters

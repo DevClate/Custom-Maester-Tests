@@ -9,7 +9,9 @@ description: Ensures Teams federation is restricted to trusted domains instead o
 
 This test checks if Microsoft Teams federation is restricted to specific allowed domains rather than allowing open federation to any external Teams organization.
 
-Open federation allows any external Teams organization to contact your users, which can lead to phishing, social engineering, and data leakage.
+## Policy Statement
+
+Contoso's company policy requires federation to be restricted to trusted partner domains to prevent unauthorized external access and reduce security risks. Open federation allows any external Teams organization to contact your users, which can lead to phishing, social engineering, and data leakage.
 
 ## Why This Matters
 

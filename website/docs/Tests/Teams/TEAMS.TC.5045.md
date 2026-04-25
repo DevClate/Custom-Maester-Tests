@@ -9,6 +9,12 @@ description: Review of message translation feature considering sensitive data ex
 
 This informational/security test reviews the status of the message translation feature in Microsoft Teams.
 
+## Policy Statement
+
+Message translation features send message content to external translation services. This test reviews the setting to ensure organizations consider whether sensitive data could be exposed through third-party translation services.
+
+## Why This Matters
+
 Message translation allows users to automatically translate messages to their preferred language, improving communication in multilingual teams. However, translation requires sending message content to external translation services, which presents security and privacy considerations.
 
 ## Why This Matters

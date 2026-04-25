@@ -7,10 +7,13 @@ description: Reviews security settings for meeting recordings including storage 
 
 ## Description
 
-This security review test checks multiple meeting recording settings:
-- Cloud recording storage location (regional compliance)
-- Cloud recording enablement status
-- Meeting transcription settings
+This security review test checks multiple meeting recording settings: cloud recording storage location (regional compliance), cloud recording enablement status, and meeting transcription settings.
+
+## Policy Statement
+
+This comprehensive security review examines cloud recording, transcription, and storage location settings for Teams meetings. Organizations should review these settings to ensure they align with security and compliance requirements.
+
+## Why This Matters
 
 These settings impact data residency, compliance, and information security.
 
