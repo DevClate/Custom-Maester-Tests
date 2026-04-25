@@ -1,12 +1,12 @@
-This test checks if ShareFile integration is disabled in Microsoft Teams.
+This test checks if Citrix ShareFile integration is disabled in Microsoft Teams.
 
-Contoso's company policy requires that third-party storage integration like ShareFile must be disabled to prevent data exfiltration. Files stored through ShareFile are outside organizational control and may not comply with data governance, retention, and compliance policies.
+Contoso's company policy requires that third-party storage integration like Citrix ShareFile must be disabled to prevent data exfiltration. Files stored through Citrix ShareFile are outside organizational control and may not comply with data governance, retention, and compliance policies.
 
 **To remediate this issue:**
 
 - Navigate to the [Teams admin center - Teams settings](https://admin.teams.microsoft.com/company-wide-settings/teams-settings)
 - Expand the **Files** section
-- Under **Third-party cloud storage services**, locate **ShareFile**
+- Under **Third-party cloud storage services**, locate **Citrix ShareFile**
 - Set this option to **Off**
 - Click **Save**
 - 🔺 If this setting cannot be changed, escalate to the Teams administrator.

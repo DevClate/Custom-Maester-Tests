@@ -1,16 +1,16 @@
 ---
-title: TEAMS.TC.5004 - ShareFile integration should be disabled
-description: Ensures ShareFile integration is disabled in Teams to prevent data exfiltration
+title: TEAMS.TC.5004 - Citrix ShareFile integration should be disabled
+description: Ensures Citrix ShareFile integration is disabled in Teams to prevent data exfiltration
 ---
-## ShareFile integration should be disabled
+## Citrix ShareFile integration should be disabled
 
 ## Description
 
-ShareFile integration must be disabled in Microsoft Teams to prevent data exfiltration. Third-party storage integration like ShareFile allows files to be stored outside organizational control, which may not comply with data governance, retention, and compliance policies.
+Citrix ShareFile integration must be disabled in Microsoft Teams to prevent data exfiltration. Third-party storage integration like Citrix ShareFile allows files to be stored outside organizational control, which may not comply with data governance, retention, and compliance policies.
 
-When ShareFile integration is enabled, users can:
-- Share files to ShareFile from Teams channels
-- Store Teams content in ShareFile storage
+When Citrix ShareFile integration is enabled, users can:
+- Share files to Citrix ShareFile from Teams channels
+- Store Teams content in Citrix ShareFile storage
 - Bypass organizational data loss prevention (DLP) policies
 - Move sensitive data outside the organization's security boundaries
 
@@ -20,11 +20,11 @@ Enabling third-party storage services creates potential data exfiltration pathwa
 
 ## How to fix
 
-### Disable ShareFile Integration in Teams Admin Center
+### Disable Citrix ShareFile Integration in Teams Admin Center
 
 1. Navigate to the [Teams admin center - Teams settings](https://admin.teams.microsoft.com/company-wide-settings/teams-settings)
 2. Expand the **Files** section
-3. Under **Third-party cloud storage services**, locate **ShareFile**
+3. Under **Third-party cloud storage services**, locate **Citrix ShareFile**
 4. Set this option to **Off**
 5. Click **Save**
 
@@ -34,10 +34,10 @@ Enabling third-party storage services creates potential data exfiltration pathwa
 # Connect to Teams
 Connect-MicrosoftTeams
 
-# Check current ShareFile integration setting
+# Check current Citrix ShareFile integration setting (PowerShell still uses AllowShareFile)
 Get-CsTeamsClientConfiguration | Select-Object AllowShareFile
 
-# Disable ShareFile integration
+# Disable Citrix ShareFile integration
 Set-CsTeamsClientConfiguration -AllowShareFile $false
 
 # Verify the change
@@ -46,14 +46,14 @@ Get-CsTeamsClientConfiguration | Select-Object AllowShareFile
 
 ## Impact
 
-Disabling ShareFile integration will:
-- ✅ Prevent users from sharing files to ShareFile from Teams
+Disabling Citrix ShareFile integration will:
+- ✅ Prevent users from sharing files to Citrix ShareFile from Teams
 - ✅ Force users to use approved storage solutions (OneDrive, SharePoint)
 - ✅ Ensure all files remain within organizational compliance boundaries
-- ⚠️ Existing ShareFile integrations in channels may stop working
+- ⚠️ Existing Citrix ShareFile integrations in channels may stop working
 
 :::info
-Users who previously used ShareFile integration will need to migrate their workflows to use OneDrive for Business or SharePoint.
+Users who previously used Citrix ShareFile integration will need to migrate their workflows to use OneDrive for Business or SharePoint.
 :::
 
 ## Related third-party storage services

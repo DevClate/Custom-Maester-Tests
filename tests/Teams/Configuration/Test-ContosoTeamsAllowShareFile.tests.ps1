@@ -3,7 +3,7 @@ BeforeAll {
 }
 
 Describe "Contoso" -Tag "TEAMS.TC.5004", "Teams", "CustomTests", "Configuration", "Security" {
-    It "TEAMS.TC.5004: ShareFile Integration - ShareFile integration should be disabled to prevent data exfiltration" {
+    It "TEAMS.TC.5004: Citrix ShareFile Integration - Citrix ShareFile integration should be disabled to prevent data exfiltration" {
         $result = Test-ContosoTeamsAllowShareFile
         
         if ($null -ne $result) {

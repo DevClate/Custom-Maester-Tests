@@ -9,7 +9,7 @@ description: Comprehensive review of multiple Teams security settings including 
 
 This comprehensive security review test examines multiple critical security settings across Teams:
 - Anonymous meeting join capabilities
-- Third-party storage integration (Box, Dropbox, Google Drive, ShareFile)
+- Third-party storage integration (Box, Dropbox, Google Drive, Citrix ShareFile)
 - External participant controls
 - Guest access configurations
 
@@ -34,7 +34,7 @@ This holistic assessment provides visibility into your organization's overall Te
 - Potential for unauthorized access
 - Compliance and audit challenges
 
-### 2. Third-Party Storage (Box, Dropbox, Google Drive, ShareFile)
+### 2. Third-Party Storage (Box, Dropbox, Google Drive, Citrix ShareFile)
 **Risk:** Data exfiltration and external storage exposure
 - Organizational data flows to external services
 - Loss of data control and visibility
@@ -91,7 +91,7 @@ This test provides a comprehensive review of your Teams security configuration. 
 ### Disable Third-Party Storage:
 1. Navigate to [Teams Admin Center - Teams Settings](https://admin.teams.microsoft.com/company-wide-settings/teams-settings)
 2. Under **Files** section
-3. Disable **Box**, **Dropbox**, **Google Drive**, **ShareFile**
+3. Disable **Box**, **Dropbox**, **Google Drive**, **Citrix ShareFile**
 4. Click **Save**
 
 ### Review External Access:

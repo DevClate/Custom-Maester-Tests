@@ -127,7 +127,7 @@ Instead of third-party storage, use Microsoft-approved solutions:
 - [TEAMS.TC.5001 - Dropbox Integration](TEAMS.TC.5001.md)
 - [TEAMS.TC.5002 - Box Integration](TEAMS.TC.5002.md)
 - [TEAMS.TC.5003 - Google Drive Integration](TEAMS.TC.5003.md)
-- [TEAMS.TC.5004 - ShareFile Integration](TEAMS.TC.5004.md)
+- [TEAMS.TC.5004 - Citrix ShareFile Integration](TEAMS.TC.5004.md)
 
 ## Learn More
 

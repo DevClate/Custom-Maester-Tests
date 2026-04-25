@@ -61,7 +61,7 @@ Users who previously used Dropbox integration will need to migrate their workflo
 Consider reviewing and disabling other third-party storage integrations:
 - **Box** (`AllowBox`) - [TEAMS.TC.5002](./TEAMS.TC.5002.md)
 - **Google Drive** (`AllowGoogleDrive`) - [TEAMS.TC.5003](./TEAMS.TC.5003.md)
-- **ShareFile** (`AllowShareFile`) - [TEAMS.TC.5004](./TEAMS.TC.5004.md)
+- **Citrix ShareFile** (`AllowShareFile`) - [TEAMS.TC.5004](./TEAMS.TC.5004.md)
 - **Egnyte** (`AllowEgnyte`)
 
 All third-party storage services should be evaluated against your organization's security and compliance requirements.
