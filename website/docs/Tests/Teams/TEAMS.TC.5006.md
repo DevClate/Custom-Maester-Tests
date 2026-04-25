@@ -74,7 +74,7 @@ For meetings with external participants, use lobby controls to screen attendees 
 
 - [TEAMS.TC.5007 - Anonymous Start Meeting](./TEAMS.TC.5007.md)
 - [TEAMS.TC.5008 - Anonymous Dial Out](./TEAMS.TC.5008.md)
-- [TEAMS.TC.5011 - Auto Admitted Users](./TEAMS.TC.5011.md)
+- [TEAMS.TC.5010 - Auto Admitted Users](./TEAMS.TC.5010.md)
 
 ## Related links
 
