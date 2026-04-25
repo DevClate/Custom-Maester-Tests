@@ -14,10 +14,10 @@ function Test-ContosoTeamsAutoAdmittedUsers {
         $autoAdmitSetting = $TeamsMeetingPolicyGlobal.AutoAdmittedUsers
 
         if ($autoAdmitSetting -in @('EveryoneInCompany', 'OrganizerOnly', 'InvitedUsers')) {
-            $TestResults = "Well done! Auto-admitted users setting is properly restricted."
+            $TestResults = "✅ **Passed:** Auto-admitted users is currently set to **$autoAdmitSetting** in the Global policy, which is a secure configuration."
         } else {
             $result = $false
-            $TestResults = "Auto-admitted users is set to $autoAdmitSetting, which may allow unauthorized access."
+            $TestResults = "❌ **Failed:** Auto-admitted users is set to **$autoAdmitSetting**, which may allow unauthorized access. Consider changing to EveryoneInCompany, OrganizerOnly, or InvitedUsers."
         }
 
         Add-MtTestResultDetail -Result $TestResults
