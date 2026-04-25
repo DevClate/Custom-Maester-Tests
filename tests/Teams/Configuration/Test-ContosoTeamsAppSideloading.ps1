@@ -16,7 +16,7 @@ function Test-ContosoTeamsAppSideloading {
             $TestResults = "Well done! App sideloading is properly disabled."
         } else {
             $result = $false
-            $TestResults = "App sideloading is enabled, which bypasses security review processes.`n%TestResult%"
+            $TestResults = "App sideloading is enabled, which bypasses security review processes."
         }
 
         Add-MtTestResultDetail -Result $TestResults

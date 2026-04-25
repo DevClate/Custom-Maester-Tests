@@ -15,7 +15,9 @@ The attendee visibility mode should be set to a more restrictive option to prote
 
 **To remediate:**
 
-Navigate to [Teams Admin Center - Broadcast Policies](https://admin.teams.microsoft.com/policies/broadcast) and change the **BroadcastAttendeeVisibilityMode** setting:
+**Note:** Broadcast policy settings are not accessible via the Teams Admin Center and must be configured using PowerShell.
+
+Use PowerShell to change the **BroadcastAttendeeVisibilityMode** setting:
 
 ```powershell
 # Set to InvitedUsersInCompany (recommended)

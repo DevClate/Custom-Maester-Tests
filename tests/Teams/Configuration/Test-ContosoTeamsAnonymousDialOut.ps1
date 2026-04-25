@@ -26,7 +26,7 @@ function Test-ContosoTeamsAnonymousDialOut {
             $TestResults = "Well done! Anonymous users are properly restricted from dialing out."
         } else {
             $result = $false
-            $TestResults = "Anonymous users are allowed to dial out, which can lead to toll fraud and unauthorized PSTN usage.`n%TestResult%"
+            $TestResults = "Anonymous users are allowed to dial out, which can lead to toll fraud and unauthorized PSTN usage."
         }
 
         Add-MtTestResultDetail -Result $TestResults

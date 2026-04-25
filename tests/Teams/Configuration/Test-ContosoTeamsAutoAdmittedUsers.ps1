@@ -17,7 +17,7 @@ function Test-ContosoTeamsAutoAdmittedUsers {
             $TestResults = "Well done! Auto-admitted users setting is properly restricted."
         } else {
             $result = $false
-            $TestResults = "Auto-admitted users is set to $autoAdmitSetting, which may allow unauthorized access.`n%TestResult%"
+            $TestResults = "Auto-admitted users is set to $autoAdmitSetting, which may allow unauthorized access."
         }
 
         Add-MtTestResultDetail -Result $TestResults

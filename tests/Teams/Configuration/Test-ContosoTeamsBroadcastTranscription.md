@@ -4,8 +4,18 @@ Contoso's company policy requires broadcast transcription to be reviewed based o
 
 **To review this configuration:**
 
-- Navigate to [Teams Admin Center - Broadcast Policies](https://admin.teams.microsoft.com/policies/broadcast).
-- Review the **AllowBroadcastTranscription** setting in the Global policy.
+**Note:** Broadcast policy settings are not accessible via the Teams Admin Center and must be configured using PowerShell.
+
+- Use PowerShell to review the **AllowBroadcastTranscription** setting in the Global policy:
+
+```powershell
+# Check current setting
+Get-CsTeamsMeetingBroadcastPolicy -Identity Global | Select-Object AllowBroadcastTranscription
+
+# Modify if needed (True or False)
+Set-CsTeamsMeetingBroadcastPolicy -Identity Global -AllowBroadcastTranscription $true
+```
+
 - Consider your organization's requirements:
   - **Accessibility**: Transcription improves accessibility for attendees with hearing impairments.
   - **Compliance**: Some regulations may require or prohibit transcription.

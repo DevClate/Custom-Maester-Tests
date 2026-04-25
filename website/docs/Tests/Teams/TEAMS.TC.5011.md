@@ -25,8 +25,14 @@ Broadcast transcription can improve accessibility for attendees but may have imp
 
 ### Review Current Configuration
 
-1. Navigate to [Teams Admin Center - Broadcast Policies](https://admin.teams.microsoft.com/policies/broadcast)
-2. Review the **AllowBroadcastTranscription** setting in the Global policy
+**Note:** Broadcast policy settings are not accessible via the Teams Admin Center and must be configured using PowerShell.
+
+```powershell
+# Check current setting
+Get-CsTeamsMeetingBroadcastPolicy -Identity Global | Select-Object AllowBroadcastTranscription
+```
+
+Review the **AllowBroadcastTranscription** setting in the Global policy
 3. Evaluate based on your organization's needs
 
 ### Considerations

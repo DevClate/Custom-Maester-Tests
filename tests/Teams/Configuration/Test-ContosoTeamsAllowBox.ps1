@@ -16,7 +16,7 @@ function Test-ContosoTeamsAllowBox {
             $TestResults = "Well done! Box integration is properly disabled in Teams."
         } else {
             $result = $false
-            $TestResults = "Box integration is enabled in Teams, which can lead to data exfiltration.`n%TestResult%"
+            $TestResults = "Box integration is enabled in Teams, which can lead to data exfiltration."
         }
 
         Add-MtTestResultDetail -Result $TestResults

@@ -51,9 +51,12 @@ Proper configuration of external collaboration settings is essential to enable b
 1. Navigate to [Teams Admin Center - Meeting Policies](https://admin.teams.microsoft.com/policies/meetings)
 2. Review **AllowPSTNUsersToBypassLobby** setting and set to **Off** for better security
 
-**Disable Public Users (Skype) - PowerShell Only:**
+**Disable Public Users (Skype) - Check SFB Settings or PowerShell:**
 
-The AllowPublicUsers setting (Skype consumer communication) is no longer configurable in the Teams Admin Center UI. To modify this setting, use PowerShell:
+The AllowPublicUsers setting (Skype consumer communication) may be configurable via:
+
+1. [Teams Admin Center - Skype for Business Settings](https://admin.teams.microsoft.com/company-wide-settings/sfb)
+2. Or use PowerShell if not available in the UI:
 
 ```powershell
 Set-CsTeamsClientConfiguration -AllowPublicUsers $false

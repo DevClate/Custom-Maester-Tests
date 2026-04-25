@@ -16,7 +16,7 @@ function Test-ContosoTeamsAllowShareFile {
             $TestResults = "Well done! ShareFile integration is properly disabled in Teams."
         } else {
             $result = $false
-            $TestResults = "ShareFile integration is enabled in Teams, which can lead to data exfiltration.`n%TestResult%"
+            $TestResults = "ShareFile integration is enabled in Teams, which can lead to data exfiltration."
         }
 
         Add-MtTestResultDetail -Result $TestResults

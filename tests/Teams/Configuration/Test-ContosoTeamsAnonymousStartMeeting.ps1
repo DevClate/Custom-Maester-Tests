@@ -17,7 +17,7 @@ function Test-ContosoTeamsAnonymousStartMeeting {
             $TestResults = "Well done! Anonymous users are properly restricted from starting meetings."
         } else {
             $result = $false
-            $TestResults = "Anonymous users are allowed to start meetings, which poses a security risk.`n%TestResult%"
+            $TestResults = "Anonymous users are allowed to start meetings, which poses a security risk."
         }
 
         Add-MtTestResultDetail -Result $TestResults

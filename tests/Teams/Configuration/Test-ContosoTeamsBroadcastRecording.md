@@ -4,8 +4,18 @@ Contoso's company policy requires broadcast recording settings to be reviewed ba
 
 **To review this configuration:**
 
-- Navigate to [Teams Admin Center - Broadcast Policies](https://admin.teams.microsoft.com/policies/broadcast).
-- Review the **BroadcastRecordingMode** setting in the Global policy.
+**Note:** Broadcast policy settings are not accessible via the Teams Admin Center and must be configured using PowerShell.
+
+- Use PowerShell to review the **BroadcastRecordingMode** setting in the Global policy:
+
+```powershell
+# Check current setting
+Get-CsTeamsMeetingBroadcastPolicy -Identity Global | Select-Object BroadcastRecordingMode
+
+# Modify if needed (example values: Always, UserOverride, AlwaysDisabled)
+Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastRecordingMode UserOverride
+```
+
 - Consider your organization's requirements:
   - **Compliance**: Some regulations require recording of live events.
   - **Storage**: Recordings consume significant storage space.

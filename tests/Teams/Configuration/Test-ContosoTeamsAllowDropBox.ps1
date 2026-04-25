@@ -16,7 +16,7 @@ function Test-ContosoTeamsAllowDropBox {
             $TestResults = "Well done! Dropbox integration is properly disabled in Teams."
         } else {
             $result = $false
-            $TestResults = "Dropbox integration is enabled in Teams, which can lead to data exfiltration.`n%TestResult%"
+            $TestResults = "Dropbox integration is enabled in Teams, which can lead to data exfiltration."
         }
 
         Add-MtTestResultDetail -Result $TestResults

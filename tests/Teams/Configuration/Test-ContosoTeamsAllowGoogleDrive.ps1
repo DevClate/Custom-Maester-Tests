@@ -16,7 +16,7 @@ function Test-ContosoTeamsAllowGoogleDrive {
             $TestResults = "Well done! Google Drive integration is properly disabled in Teams."
         } else {
             $result = $false
-            $TestResults = "Google Drive integration is enabled in Teams, which can lead to data exfiltration.`n%TestResult%"
+            $TestResults = "Google Drive integration is enabled in Teams, which can lead to data exfiltration."
         }
 
         Add-MtTestResultDetail -Result $TestResults

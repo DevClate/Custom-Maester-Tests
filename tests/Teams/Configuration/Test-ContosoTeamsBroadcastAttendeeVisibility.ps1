@@ -14,7 +14,6 @@ function Test-ContosoTeamsBroadcastAttendeeVisibility {
         }
 
         $broadcastPolicy = Get-CsTeamsMeetingBroadcastPolicy | Where-Object { $_.Identity -eq "Global" }
-        $portalLink = "https://admin.teams.microsoft.com/policies/broadcast"
 
         $attendeeVisibilityMode = if ($null -ne $broadcastPolicy.BroadcastAttendeeVisibilityMode) { 
             $broadcastPolicy.BroadcastAttendeeVisibilityMode.ToString() 
@@ -26,7 +25,7 @@ function Test-ContosoTeamsBroadcastAttendeeVisibility {
             $TestResults = "Well done! Broadcast attendee visibility is appropriately configured."
         } else {
             $result = $false
-            $TestResults = "❌ **Failed:** BroadcastAttendeeVisibilityMode in [Broadcast policies]($portalLink) should not be 'EveryoneInCompany' but is currently $attendeeVisibilityMode."
+            $TestResults = "❌ **Failed:** BroadcastAttendeeVisibilityMode should not be 'EveryoneInCompany' but is currently $attendeeVisibilityMode. Use PowerShell to configure this setting."
         }
 
         Add-MtTestResultDetail -Result $TestResults

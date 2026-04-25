@@ -16,7 +16,7 @@ function Test-ContosoTeamsAllowEmailIntoChannel {
             $TestResults = "Well done! Email into channel is properly disabled."
         } else {
             $result = $false
-            $TestResults = "Email into channel is enabled, which can bypass email security controls.`n%TestResult%"
+            $TestResults = "Email into channel is enabled, which can bypass email security controls."
         }
 
         Add-MtTestResultDetail -Result $TestResults

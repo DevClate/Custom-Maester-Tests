@@ -22,7 +22,7 @@ function Test-ContosoTeamsAllowEgnyte {
             $TestResults = "Well done! Egnyte integration is properly disabled in Teams."
         } else {
             $result = $false
-            $TestResults = "Egnyte integration is enabled in Teams, which can lead to data exfiltration.`n%TestResult%"
+            $TestResults = "Egnyte integration is enabled in Teams, which can lead to data exfiltration."
         }
 
         Add-MtTestResultDetail -Result $TestResults
