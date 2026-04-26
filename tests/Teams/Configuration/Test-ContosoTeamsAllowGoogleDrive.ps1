@@ -1,4 +1,10 @@
 function Test-ContosoTeamsAllowGoogleDrive {
+    <#
+    .SYNOPSIS
+        Checks if Google Drive integration is disabled in Teams
+    .DESCRIPTION
+        TEAMS.TC.5003 - Google Drive integration should be disabled to prevent data exfiltration
+    #>
     $result = $true
 
     try {

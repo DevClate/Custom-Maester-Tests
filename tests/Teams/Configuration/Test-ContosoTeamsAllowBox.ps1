@@ -1,4 +1,10 @@
 function Test-ContosoTeamsAllowBox {
+    <#
+    .SYNOPSIS
+        Checks if Box integration is disabled in Teams
+    .DESCRIPTION
+        TEAMS.TC.5002 - Box integration should be disabled to prevent data exfiltration
+    #>
     $result = $true
 
     try {

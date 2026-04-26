@@ -1,4 +1,10 @@
 function Test-ContosoTeamsAllowDropBox {
+    <#
+    .SYNOPSIS
+        Checks if Dropbox integration is disabled in Teams
+    .DESCRIPTION
+        TEAMS.TC.5001 - Dropbox integration should be disabled to prevent data exfiltration
+    #>
     $result = $true
 
     try {

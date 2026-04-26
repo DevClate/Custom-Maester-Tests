@@ -1,4 +1,10 @@
 function Test-ContosoTeamsAllowShareFile {
+    <#
+    .SYNOPSIS
+        Checks if Citrix ShareFile integration is disabled in Teams
+    .DESCRIPTION
+        TEAMS.TC.5004 - Citrix ShareFile integration should be disabled to prevent data exfiltration
+    #>
     $result = $true
 
     try {

@@ -2,80 +2,136 @@
 title: TEAMS.TC.5003 - Google Drive integration should be disabled
 description: Ensures Google Drive integration is disabled in Teams to prevent data exfiltration
 ---
-## Google Drive integration should be disabled
+
+# TEAMS.TC.5003 - Google Drive Integration Should Be Disabled
 
 ## Description
 
-This test checks if Google Drive integration is disabled in Microsoft Teams.
+This test checks if Google Drive integration is disabled in Microsoft Teams to prevent data exfiltration.
 
 ## Policy Statement
 
-Contoso's company policy requires that third-party storage integration like Google Drive must be disabled to prevent data exfiltration. Files stored through Google Drive are outside organizational control and may not comply with data governance, retention, and compliance policies. Users should rely on approved organizational storage solutions like SharePoint and OneDrive.
+Contoso's company policy requires all third-party cloud storage services, including Google Drive, to be disabled in Teams to maintain control over corporate data.
 
 ## Why This Matters
 
-When Google Drive integration is enabled, users can:
-- Share files to Google Drive from Teams channels
-- Store Teams content in Google Drive storage
-- Bypass organizational data loss prevention (DLP) policies
-- Move sensitive data outside the organization's security boundaries
+Allowing third-party storage integrations in Teams creates several risks:
 
-:::warning Security Risk
-Enabling third-party storage services creates potential data exfiltration pathways that bypass organizational security controls.
-:::
+### Data Exfiltration
+- Users can upload corporate data to external storage services
+- Data may be stored outside organizational control
+- Difficult to monitor and audit data transfers
+- Potential for data leaks through third-party services
 
-## How to fix
+### Compliance Risks
+- May violate data residency requirements
+- Third-party services may not meet compliance standards
+- Difficult to enforce retention policies on external storage
+- Could breach contractual obligations about data storage
 
-### Disable Google Drive Integration in Teams Admin Center
+### Security Concerns
+- Third-party services may have different security standards
+- Increased attack surface
+- Potential for unauthorized access
+- Loss of DLP protection when data leaves Microsoft 365
 
-1. Navigate to the [Teams admin center - Teams settings](https://admin.teams.microsoft.com/company-wide-settings/teams-settings)
-2. Expand the **Files** section
-3. Under **Third-party cloud storage services**, locate **Google Drive**
-4. Set this option to **Off**
-5. Click **Save**
+## How to Fix
 
-### Verify via PowerShell
+### Disable via Teams Admin Center
+
+1. Navigate to [Teams Admin Center - Client Configuration](https://admin.teams.microsoft.com/company-wide-settings/teams-settings)
+2. Scroll to **Files** section
+3. Set **Google Drive** to **Off**
+4. Click **Save**
+
+### Disable via PowerShell
 
 ```powershell
-# Connect to Teams
-Connect-MicrosoftTeams
-
-# Check current Google Drive integration setting
-Get-CsTeamsClientConfiguration | Select-Object AllowGoogleDrive
-
 # Disable Google Drive integration
 Set-CsTeamsClientConfiguration -AllowGoogleDrive $false
-
-# Verify the change
-Get-CsTeamsClientConfiguration | Select-Object AllowGoogleDrive
 ```
 
-## Impact
+### Verify Current Setting
 
-Disabling Google Drive integration will:
-- ✅ Prevent users from sharing files to Google Drive from Teams
-- ✅ Force users to use approved storage solutions (OneDrive, SharePoint)
-- ✅ Ensure all files remain within organizational compliance boundaries
-- ⚠️ Existing Google Drive integrations in channels may stop working
+```powershell
+# Check current configuration
+Get-CsTeamsClientConfiguration | Select-Object AllowGoogleDrive
 
-:::info
-Users who previously used Google Drive integration will need to migrate their workflows to use OneDrive for Business or SharePoint.
-:::
+# Should return:
+# AllowGoogleDrive
+# ----------------
+# False
+```
 
-## Related third-party storage services
+### Check All Third-Party Storage Settings
 
-Consider reviewing and disabling other third-party storage integrations:
-- **Dropbox** (`AllowDropBox`) - [TEAMS.TC.5001](./TEAMS.TC.5001.md)
-- **Box** (`AllowBox`) - [TEAMS.TC.5002](./TEAMS.TC.5002.md)
-- **ShareFile** (`AllowShareFile`) - [TEAMS.TC.5004](./TEAMS.TC.5004.md)
-- **Egnyte** (`AllowEgnyte`)
+```powershell
+# Review all third-party storage options
+Get-CsTeamsClientConfiguration | Select-Object AllowDropBox, AllowBox, AllowGoogleDrive, AllowShareFile, AllowEgnyte
 
-All third-party storage services should be evaluated against your organization's security and compliance requirements.
+# Recommended secure configuration (all disabled):
+# AllowDropBox      : False
+# AllowBox          : False
+# AllowGoogleDrive  : False
+# AllowShareFile    : False
+# AllowEgnyte       : False
+```
 
-## Related links
+## Impact Assessment
 
-* [Teams admin center - Teams settings](https://admin.teams.microsoft.com/company-wide-settings/teams-settings)
-* [Manage Teams settings for your organization](https://learn.microsoft.com/microsoftteams/enable-features-office-365)
-* [Third-party cloud storage in Teams](https://learn.microsoft.com/microsoftteams/teams-settings)
-* [Security and compliance in Teams](https://learn.microsoft.com/microsoftteams/security-compliance-overview)
-* [Set-CsTeamsClientConfiguration](https://learn.microsoft.com/powershell/module/teams/set-csteamsclientconfiguration)
+### Before Disabling
+
+**Consider:**
+- Are any teams currently using Google Drive integration?
+- Is there business justification for third-party storage?
+- What is the migration plan for existing data?
+- Have users been notified of the change?
+
+### After Disabling
+
+**Users will:**
+- No longer see Google Drive as a file sharing option in Teams
+- Need to use OneDrive/SharePoint for file storage
+- Require alternative methods to access Google Drive files
+
+**Organization gains:**
+- Better control over corporate data
+- Improved compliance posture
+- Reduced data exfiltration risk
+- Centralized data governance
+
+## Approved Storage Solutions
+
+Instead of third-party storage, use Microsoft-approved solutions:
+
+### OneDrive for Business
+- Personal file storage
+- Full DLP protection
+- Audit logging
+- Compliance integration
+
+### SharePoint Online
+- Team file storage
+- Advanced permissions
+- Retention policies
+- eDiscovery support
+
+### Teams Files
+- Channel-based storage (backed by SharePoint)
+- Automatic collaboration
+- Integrated with Teams chat
+- Version control
+
+## Related Tests
+
+- [TEAMS.TC.5001 - Dropbox Integration](TEAMS.TC.5001.md)
+- [TEAMS.TC.5002 - Box Integration](TEAMS.TC.5002.md)
+- [TEAMS.TC.5004 - Citrix ShareFile Integration](TEAMS.TC.5004.md)
+- [TEAMS.TC.5005 - Egnyte Integration](TEAMS.TC.5005.md)
+
+## Learn More
+
+- [Manage Teams settings for your organization](https://learn.microsoft.com/microsoftteams/enable-features-office-365)
+- [Control third-party storage in Teams](https://learn.microsoft.com/microsoftteams/enhance-office-365-groups)
+- [Teams security best practices](https://learn.microsoft.com/microsoftteams/security-best-practices)
+- [Data Loss Prevention in Teams](https://learn.microsoft.com/purview/dlp-microsoft-teams)

@@ -1,21 +1,29 @@
 This test checks if Google Drive integration is disabled in Microsoft Teams.
 
-Contoso's company policy requires that third-party storage integration like Google Drive must be disabled to prevent data exfiltration. Files stored through Google Drive are outside organizational control and may not comply with data governance, retention, and compliance policies. Users should rely on approved organizational storage solutions like SharePoint and OneDrive.
+Contoso's company policy requires all third-party cloud storage services to be disabled in Teams to prevent data exfiltration and maintain control over corporate data. This is important for ensuring that sensitive company information is not stored outside of approved storage locations.
 
 **To remediate this issue:**
 
-- Navigate to the [Teams admin center - Teams settings](https://admin.teams.microsoft.com/company-wide-settings/teams-settings)
-- Expand the **Files** section
-- Under **Third-party cloud storage services**, locate **Google Drive**
-- Set this option to **Off**
-- Click **Save**
-- 🔺 If this setting cannot be changed, escalate to the Teams administrator.
+- Navigate to the [Teams Admin Center - Client Configuration](https://admin.teams.microsoft.com/company-wide-settings/teams-settings).
+- Under **Files**, ensure that **Google Drive** is set to **Off**.
+- Save the changes.
+
+**Or use PowerShell:**
+
+```powershell
+Set-CsTeamsClientConfiguration -AllowGoogleDrive $false
+```
+
+**Verify the setting:**
+
+```powershell
+Get-CsTeamsClientConfiguration | Select-Object AllowGoogleDrive
+```
 
 **Learn more:**
 
 - [Manage Teams settings for your organization](https://learn.microsoft.com/microsoftteams/enable-features-office-365)
-- [Third-party cloud storage in Teams](https://learn.microsoft.com/microsoftteams/teams-settings)
-- [Security and compliance in Teams](https://learn.microsoft.com/microsoftteams/security-compliance-overview)
+- [Control third-party storage in Teams](https://learn.microsoft.com/microsoftteams/enhance-office-365-groups)
 
 <!--- Results --->
 
