@@ -5,7 +5,7 @@ Contoso's company policy requires federation to be restricted to trusted partner
 **To remediate this issue:**
 
 - Navigate to [Teams Admin Center - External Access](https://admin.teams.microsoft.com/company-wide-settings/external-communications)
-- Under **Teams and Skype for Business users in external organizations**
+- Under **Allow or block external domains**
 - Select **Allow only specific external domains**
 - Add your trusted partner domains to the allowed list
 - Remove any domains from the blocked list if using allow list
