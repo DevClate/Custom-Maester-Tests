@@ -61,30 +61,7 @@ If your organization purchases through a Cloud Solution Provider (CSP) or Enterp
 3. Provide the SKU part number from the test results
 4. Specify the quantity needed
 
-### Step 4: Monitor utilization trends
-
-Set up regular monitoring to track license usage over time:
-
-```powershell
-# Check current license utilization for all SKUs
-Connect-MgGraph -Scopes "Organization.Read.All"
-
-Get-MgSubscribedSku | ForEach-Object {
-    $enabled = $_.PrepaidUnits.Enabled
-    if ($enabled -gt 0) {
-        $utilization = [math]::Round(($_.ConsumedUnits / $enabled) * 100, 2)
-        [PSCustomObject]@{
-            License = $_.SkuPartNumber
-            Consumed = $_.ConsumedUnits
-            Enabled = $enabled
-            Available = $enabled - $_.ConsumedUnits
-            UtilizationPercent = $utilization
-        }
-    }
-} | Where-Object {$_.UtilizationPercent -gt 80} | Sort-Object UtilizationPercent -Descending | Format-Table
-```
-
-## Important considerations:
+### Important considerations:
 
 - **Purchase timing**: License activation can take 24-48 hours after purchase
 - **Auto-renewal**: Enable auto-renewal to prevent unexpected license expiration
