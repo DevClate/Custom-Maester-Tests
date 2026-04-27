@@ -1,0 +1,8 @@
+{
+  "label": "Entra Licensing",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Tests that validate Microsoft 365 license capacity and utilization to prevent business disruption."
+  }
+}
