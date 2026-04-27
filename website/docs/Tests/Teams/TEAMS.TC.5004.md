@@ -2,34 +2,36 @@
 title: TEAMS.TC.5004 - Citrix ShareFile integration should be disabled
 description: Ensures Citrix ShareFile integration is disabled in Teams to prevent data exfiltration
 ---
-
 # TEAMS.TC.5004 - Citrix ShareFile Integration Should Be Disabled
 
 ## Description
 
-This test checks if Citrix ShareFile integration is disabled in Microsoft Teams to prevent data exfiltration.
+This test checks if Citrix files integration is disabled in Microsoft Teams to prevent data exfiltration.
 
 ## Policy Statement
 
-Contoso's company policy requires all third-party cloud storage services, including Citrix ShareFile, to be disabled in Teams to maintain control over corporate data.
+Contoso's company policy requires all third-party cloud storage services, including Citrix files, to be disabled in Teams to maintain control over corporate data.
 
 ## Why This Matters
 
 Allowing third-party storage integrations in Teams creates several risks:
 
 ### Data Exfiltration
+
 - Users can upload corporate data to external storage services
 - Data may be stored outside organizational control
 - Difficult to monitor and audit data transfers
 - Potential for data leaks through third-party services
 
 ### Compliance Risks
+
 - May violate data residency requirements
 - Third-party services may not meet compliance standards
 - Difficult to enforce retention policies on external storage
 - Could breach contractual obligations about data storage
 
 ### Security Concerns
+
 - Third-party services may have different security standards
 - Increased attack surface
 - Potential for unauthorized access
@@ -41,7 +43,7 @@ Allowing third-party storage integrations in Teams creates several risks:
 
 1. Navigate to [Teams Admin Center - Client Configuration](https://admin.teams.microsoft.com/company-wide-settings/teams-settings)
 2. Scroll to **Files** section
-3. Set **Citrix ShareFile** to **Off**
+3. Set **Citrix files** to **Off**
 4. Click **Save**
 
 ### Disable via PowerShell
@@ -82,7 +84,8 @@ Get-CsTeamsClientConfiguration | Select-Object AllowDropBox, AllowBox, AllowGoog
 ### Before Disabling
 
 **Consider:**
-- Are any teams currently using Citrix ShareFile integration?
+
+- Are any teams currently using Citrix files integration?
 - Is there business justification for third-party storage?
 - What is the migration plan for existing data?
 - Have users been notified of the change?
@@ -90,11 +93,13 @@ Get-CsTeamsClientConfiguration | Select-Object AllowDropBox, AllowBox, AllowGoog
 ### After Disabling
 
 **Users will:**
-- No longer see Citrix ShareFile as a file sharing option in Teams
+
+- No longer see Citrix files as a file sharing option in Teams
 - Need to use OneDrive/SharePoint for file storage
 - Require alternative methods to access Citrix ShareFile files
 
 **Organization gains:**
+
 - Better control over corporate data
 - Improved compliance posture
 - Reduced data exfiltration risk
@@ -105,18 +110,21 @@ Get-CsTeamsClientConfiguration | Select-Object AllowDropBox, AllowBox, AllowGoog
 Instead of third-party storage, use Microsoft-approved solutions:
 
 ### OneDrive for Business
+
 - Personal file storage
 - Full DLP protection
 - Audit logging
 - Compliance integration
 
 ### SharePoint Online
+
 - Team file storage
 - Advanced permissions
 - Retention policies
 - eDiscovery support
 
 ### Teams Files
+
 - Channel-based storage (backed by SharePoint)
 - Automatic collaboration
 - Integrated with Teams chat

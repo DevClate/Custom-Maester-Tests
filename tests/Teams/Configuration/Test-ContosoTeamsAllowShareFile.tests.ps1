@@ -3,11 +3,11 @@ BeforeAll {
 }
 
 Describe "Contoso" -Tag "TEAMS.TC.5004", "Teams", "CustomTests", "Configuration", "ThirdPartyStorage" {
-    It "TEAMS.TC.5004: Citrix ShareFile integration should be disabled" {
+    It "TEAMS.TC.5004: Citrix files integration should be disabled" {
         $result = Test-ContosoTeamsAllowShareFile
         
         if ($null -ne $result) {
-            $result | Should -Be $true -Because "Citrix ShareFile integration can lead to data exfiltration and should be disabled."
+            $result | Should -Be $true -Because "Citrix files integration can lead to data exfiltration and should be disabled."
         }
     }
 }

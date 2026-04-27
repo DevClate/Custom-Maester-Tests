@@ -1,9 +1,9 @@
 function Test-ContosoTeamsAllowShareFile {
     <#
     .SYNOPSIS
-        Checks if Citrix ShareFile integration is disabled in Teams
+        Checks if Citrix files integration is disabled in Teams
     .DESCRIPTION
-        TEAMS.TC.5004 - Citrix ShareFile integration should be disabled to prevent data exfiltration
+        TEAMS.TC.5004 - Citrix files integration should be disabled to prevent data exfiltration
     #>
     $result = $true
 
@@ -19,10 +19,10 @@ function Test-ContosoTeamsAllowShareFile {
         $allowShareFile = $clientConfig.AllowShareFile
 
         if ($allowShareFile -eq $false) {
-            $TestResults = "Well done! Citrix ShareFile integration is properly disabled in Teams."
+            $TestResults = "Well done! Citrix files integration is properly disabled in Teams."
         } else {
             $result = $false
-            $TestResults = "Citrix ShareFile integration is enabled in Teams, which can lead to data exfiltration."
+            $TestResults = "Citrix files integration is enabled in Teams, which can lead to data exfiltration."
         }
 
         Add-MtTestResultDetail -Result $TestResults

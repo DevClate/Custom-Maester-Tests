@@ -1,11 +1,11 @@
-This test checks if Citrix ShareFile integration is disabled in Microsoft Teams.
+This test checks if Citrix files integration is disabled in Microsoft Teams.
 
 Contoso's company policy requires all third-party cloud storage services to be disabled in Teams to prevent data exfiltration and maintain control over corporate data. This is important for ensuring that sensitive company information is not stored outside of approved storage locations.
 
 **To remediate this issue:**
 
 - Navigate to the [Teams Admin Center - Client Configuration](https://admin.teams.microsoft.com/company-wide-settings/teams-settings).
-- Under **Files**, ensure that **Citrix ShareFile** is set to **Off**.
+- Under **Files**, ensure that **Citrix files** is set to **Off**.
 - Save the changes.
 
 **Or use PowerShell:**
