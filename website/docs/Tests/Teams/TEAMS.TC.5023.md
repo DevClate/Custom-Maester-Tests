@@ -2,7 +2,6 @@
 title: TEAMS.TC.5023 - Federation should be restricted to specific allowed domains
 description: Ensures Teams federation is restricted to trusted domains instead of open federation
 ---
-
 # TEAMS.TC.5023 - Federated Domains
 
 ## Description
@@ -33,11 +32,10 @@ The test provides three possible outcomes:
 ## Remediation Steps
 
 1. Navigate to [Teams Admin Center - External Access](https://admin.teams.microsoft.com/company-wide-settings/external-communications)
-2. Under **Teams and Skype for Business users in external organizations**
+2. Under **Allow or block external domains**
 3. Select **Allow only specific external domains**
 4. Add your trusted partner domains to the allowed list
-5. Remove any domains from the blocked list if using allow list
-6. Click **Save**
+5. Click **Save**
 
 ## Best Practices
 
