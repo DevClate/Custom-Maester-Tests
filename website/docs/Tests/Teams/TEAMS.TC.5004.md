@@ -1,8 +1,8 @@
 ---
-title: TEAMS.TC.5004 - Citrix ShareFile integration should be disabled
-description: Ensures Citrix ShareFile integration is disabled in Teams to prevent data exfiltration
+title: TEAMS.TC.5004 - Citrix files integration should be disabled
+description: Ensures Citrix files integration is disabled in Teams to prevent data exfiltration
 ---
-# TEAMS.TC.5004 - Citrix ShareFile Integration Should Be Disabled
+# TEAMS.TC.5004 - Citrix files Integration Should Be Disabled
 
 ## Description
 
